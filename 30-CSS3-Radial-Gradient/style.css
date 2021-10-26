@@ -1,0 +1,64 @@
+/* gradasi 2 warna */
+.kotak {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(rgb(144, 220, 250),rgb(8, 102, 189));
+}
+
+/* gradasi 3 warna */
+.kotak2 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(rgb(144, 220, 250),rgb(47, 8, 189),rgb(255, 0, 179));
+}
+
+/* gradasi dengan color-stop */
+.kotak3 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(rgb(250, 144, 179) 65%,rgb(102, 8, 44));
+}
+
+/* gradasi tipe ellipse */
+.kotak4 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(ellipse,rgb(220, 144, 250),rgb(189, 8, 159));
+}
+
+/* gradasi tipe circle */
+.kotak5 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(circle,rgb(250, 183, 144) ,rgb(189, 80, 8));
+}
+
+/* gradasi dengan tipe dan jangkauan */
+.kotak6 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(circle closest-side ,rgb(206, 206, 206) ,rgb(65, 65, 65));
+}
+
+/* gradasi dengan tipe dan jangkauan dan posisi */
+.kotak7 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(circle farthest-side at top left,rgb(206, 206, 206) ,rgb(65, 65, 65));
+}
+
+/* gradasi dengan gradient generator */
+.kotak8 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: rgb(204,86,236);
+    background: radial-gradient(circle, rgba(204,86,236,1) 0%, rgba(151,17,208,1) 53%, rgba(44,7,73,1) 100%);
+}

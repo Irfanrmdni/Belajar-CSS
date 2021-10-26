@@ -1,0 +1,76 @@
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    margin: 20px 0;
+}
+
+.kotak1:hover {
+    animation: animasikotak .5s ease-in-out;
+}
+
+.kotak2:hover {
+    animation: animasikotak2 .5s ease-in-out;
+}
+
+/* jika animasi nya langsung di simpan di class / elemen nya
+    maka animasi nya akan berjalan ketika browser di refresh saja */
+.kotak3 {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    margin: 20px 0;
+    animation: animasikotak 2s ease-in-out;
+}
+
+/* animasi dengan [interation-count] */
+.kotak4 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    margin: 20px 0;
+    animation: animasikotak 2s ease-in-out 2;
+}
+
+/* animasi dengan [direction] */
+.kotak5 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 20px 0;
+    animation: animasikotak 2s ease-in-out 2 alternate;
+}
+
+/* animasi dengan [fill-mode] */
+.kotak6 {
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    margin: 20px 0;
+    animation: animasikotak2 2s ease-in-out 3 alternate forwards;
+}
+
+/* menggunakan from - to */
+@keyframes animasikotak {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+/* menggunakan % */
+@keyframes animasikotak2 {
+    0% {
+        width: 200px;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+    }
+    100% {
+        width: 500px;
+        height: 300px;
+    }
+}

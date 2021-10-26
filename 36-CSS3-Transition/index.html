@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36 CSS3 Transition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        Transition : memungkinkan kita dapat mengubah nilai dari property HTML
+        secara halus
+
+        sintaks    : transition: [property] <durasi> [fungsi] [delay];
+        
+        [property] :
+        jika kita menggunakan [property] maka transisi nya hanya berlaku pada property itu saja
+        value dari property : all , <nama property> , none
+
+        [fungsi] :
+        untuk memberikan pergerakan nya secara halus
+        value nya yaitu : ease , ease-in , ease-out , ease-in-out , linear , cubic-bezier
+
+        untuk cubic-bezier kita bisa gunakan bantuan chrome dengan inspect element
+
+        [delay] :
+        untuk memberikan waktu tunggu sebelum transition dijalankan
+    -->
+
+    <div class="kotak"></div>
+
+    <!-- transisi agar tidak patah-patah maka harus dibungkus dengan container -->
+    <div class="container">
+        <div class="kotak2"></div>
+    </div>
+
+    <!-- contoh menggunakan [fungsi] -->
+    <div class="container2">
+        <div class="kubus kubus1">ease</div>
+        <div class="kubus kubus2">ease-in</div>
+        <div class="kubus kubus3">ease-out</div>
+        <div class="kubus kubus4">ease-in-out</div>
+        <div class="kubus kubus5">linear</div>
+        <div class="kubus kubus6">cubic bezier</div>
+    </div>
+
+    <!-- contoh menggunakan delay -->
+    <div class="container3">
+        <div class="balok"></div>
+    </div>
+</body>
+
+</html>

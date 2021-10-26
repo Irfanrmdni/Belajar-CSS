@@ -1,0 +1,86 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+// ?contoh 1 Nesting
+// .main {
+//     width: 50%;
+//     margin: 25px auto;
+//     padding: 2rem;
+//     text-align: left;
+//     background-color: rgb(43, 28, 58);
+//     border-radius: 1rem;
+//     box-shadow: 1px 6px 10px rgba(0,0,0,.3);
+//     // ?main heading
+//     .main-heading {
+//         font-size: 1.7rem;
+//         font-weight: bold;
+//         color: rgb(163, 72, 255);
+//     }
+//     // ?main paragraf
+//     .main-paragraf {
+//         font-size: 1.2rem;
+//         color: rgb(206, 161, 250);
+//         font-weight: lighter;
+//     }
+// }
+
+// ?contoh 2 Nesting
+// .main , footer {
+//     width: 50%;
+//     margin: 20px auto;
+//     background-color: lightskyblue;
+//     padding: 2rem;
+
+//     h1,p{
+//         text-align: center;
+//         color: royalblue;
+//     }
+// }
+
+// ?contoh 3 Nesting
+// *Karakter & / parent selector
+// .main {
+//     // ?ini artinya kita memanggil element parent. jadi
+//     // ? & itu untuk ngasih tau bahwa container ini adalah
+//     // ? elemen yang ada di atas dari element main / parent container
+//     .container & {
+//         background-color: lightblue;
+//     }
+
+//     // ?ini untuk mengambil element main / parent main
+//     &:hover {
+//         background-color: salmon;
+//     }
+// }
+
+// ?contoh 4 Nesting
+// *Generate classname / nama dari class
+.main {
+    // ? ini artinya & itu adalah main. jadi dia mengambil element parent
+    // ? karna kita punya nama class .main-heading , .main-paragraf
+    // ? maka kita generate kata main nya dengan &. jadi $-heading
+    // ? cara bacanya berati & &-heading = .main .main-heading
+    & &-heading {
+        font-size: 2rem;
+        color: rebeccapurple;
+    }
+    & &-paragraf {
+        font-size: 1.5rem;
+        color: royalblue;
+    }
+}
+
+// ! ini akan menjadi error karna kita parent footer nya tidak memiliki class
+// ! sehingga nanti kompilasi ke css nya menjadi footer footer-heading
+// ! solusinya kita harus menambahkan class di element footer
+.footer {
+    & &-heading {
+        font-size: 2rem;
+        color: rebeccapurple;
+    }
+    & &-paragraf {
+        font-size: 1.5rem;
+        color: royalblue;
+    }
+}

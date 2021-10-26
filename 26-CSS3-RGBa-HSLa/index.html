@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 RGBa dan HSLa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        RGBa = red green blue alpha
+        berfungsi untuk memberikan transparansi pada warna (bukan elemen)
+
+        property :
+        background-color: rgb(red,green,blue)
+        background-color: rgba(red,green,blue,alpha)
+        
+        ini solusi dari opacity agar ketika membuat transparansi pada parent
+        si child nya itu tidak ikut kena transparan juga
+
+        HSLa = hue saturation lightness alpha
+
+        property :
+        background-color: hsla(hue, saturation, lightness, alpha);
+
+        berfungsi untuk menentukan warna
+    -->
+
+    <!-- RGBa -->
+    <div class="satu">
+        <div class="dua"></div>
+    </div>
+
+    <!-- HSLa -->
+    <div class="tiga">
+        <div class="empat"></div>
+    </div>
+</body>
+
+</html>

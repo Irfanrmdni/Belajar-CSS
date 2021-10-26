@@ -1,0 +1,205 @@
+/* fonts */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeue-Regular.woff2) format('woff2');
+}
+
+body {
+    font-family: 'BebasNeue' , sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    background-color: rgb(211, 211, 211);
+}
+
+h1 {
+    font-size: 80px;
+    color: rgb(212, 27, 27);
+    text-align: center;
+    margin: 40px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(240, 26, 26, 0.4);
+}
+
+.galeri li {
+    width: 120px;
+    height: 120px;
+    /* overflow: hidden; */
+    border: solid 3px rgb(61, 61, 61);
+    float: left;
+    margin: 0 11.5px;
+    position: relative;
+}
+
+.galeri li img , .galeri li , .galeri li span {
+    border-radius: 50%;
+}
+
+.galeri li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(245, 32, 32, 0.6);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0,0,0,.6);
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: all .3s ease-in-out;
+}
+
+.galeri li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 999;
+    transition: all .8s ease-in-out;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.overlay img {
+    border-radius: unset !important;
+    max-height: 100%;
+    border: solid 3px white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+}
+
+.overlay:target img {
+    animation: zoomRotate .5s ease-in-out;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 2.4%;
+    left: 61.9%;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    line-height: normal !important;
+    background-color: rgb(44, 44, 44);
+    padding: 0 10px;
+    border: solid 1.5px white;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slide .5s .3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.overlay .close:hover {
+    color: white;
+    background-color: rgb(212, 27, 27);
+}
+
+/* navigasi */
+.overlay .next , .overlay .prev {
+    width: 57px;
+    height: 93px;
+    background-image: url(../asset/right.png);
+    position: absolute;
+    top: 45%;
+    margin-left: 25px;
+    text-indent: -9999px;
+    opacity: 0;
+}
+
+.overlay:target .next {
+    animation: nextslide .5s .3s ease-in-out forwards;
+}
+
+.overlay .prev {
+    background-image: url(../asset/left.png);
+    margin-left: -80px;
+}
+
+.overlay:target .prev {
+    animation: prevslide .5s .3s ease-in-out forwards;
+}
+
+/* clear float */
+.clear {
+    clear: both;
+}
+
+/* animasi */
+@keyframes zoomRotate {
+    0% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        margin-top: -30px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes nextslide {
+    0% {
+        opacity: 0;
+        margin-left: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 25px;
+    }
+}
+
+@keyframes prevslide {
+    0% {
+        opacity: 0;
+        margin-left: -110px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: -80px;
+    }
+}

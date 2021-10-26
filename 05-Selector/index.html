@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--`
+    selector digunakan pada css untuk mengenali sebuah elemen HTML yang akan diberi style
+    
+    selector yang dapat digunakan :
+    1. elemen HTML               = memilih elemen berdasarkan elemen tag HTML
+    2. id                        = memilih elemen berdasarkan ID / #
+    3. class                     = memilih elemen berdasarkan Class / .
+    4. complex selector          = memilih elemen yang spesifik (bisa lebih dari 1 elemen)
+    5. universal selector        = memilih semua elemen tag HTML dengan tanda *
+    6. attribute selector        = memilih elemen berdasarkan attribute dari elemen tag HTML
+    7. child selector            = memilih elemen berdasarkan anak dari elemen parent utama nya
+    8. adjacent sibling selector = memilih elemen anak pertama berdasarkan dari elemen parent utama nya
+    10. general sibling selector = memilih semua elemen anak dari elemen parent utama nya
+    
+    ID merupakan selector yang digunakan oleh satu tag html, ini adalah yang disarankan, 
+    karena ID itu sendiri hanya boleh digunakan untuk satu tag html.
+    Setiap elemen hanya dapat memiliki satu tag id. 
+    Dalam satu halaman tidak boleh ada dua penamaan id yang berbeda
+
+    CLASS merupakan selector yang dapat kita digunakan oleh lebih dari satu tag html. 
+    Artinya beberapa tag html bisa menggunakan css dari class tersebut.
+    Tag class dengan nama yang sama dapat dipakai berulang-ulang pada satu halaman.
+    Satu elemen boleh memiliki lebih dari satu Class yang berbeda-beda.
+    
+    -->
+
+    <h1>Hello World.</h1>
+
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#">link 5</a></li>
+    </ul>
+
+    <ol>
+        <li><a href="#">link 6</a></li>
+        <li><a href="#">link 7</a></li>
+        <li><a href="#">link 8</a></li>
+        <li><a href="#">link 9</a></li>
+        <li><a href="#">link 10</a></li>
+    </ol>
+
+    <a href="#" class="link">irstudio</a>
+
+    <h2>judul artikel</h2>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam odit id eveniet totam. Ipsa,
+        numquam
+        eaque? Voluptas autem laboriosam eligendi hic repellat eveniet totam praesentium, non quod magni rerum officiis
+        illum modi eius doloribus soluta, vitae, itaque ratione asperiores? Esse provident nisi suscipit adipisci
+        voluptates iure ex quibusdam enim aliquam minima quia aperiam in facilis nihil atque tenetur impedit veniam,
+        molestias vero explicabo aut? Earum voluptas vitae voluptates quae.</p>
+
+    <p class="p2 cetakTebal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam odit id eveniet
+        totam. Ipsa,
+        numquam
+        eaque? Voluptas autem laboriosam eligendi hic repellat eveniet totam praesentium, non quod magni rerum officiis
+        illum modi eius doloribus soluta, vitae, itaque ratione asperiores? Esse provident nisi suscipit adipisci
+        voluptates iure ex quibusdam enim aliquam minima quia aperiam in facilis nihil atque tenetur impedit veniam,
+        molestias vero explicabo aut? Earum voluptas vitae voluptates quae.</p>
+
+    <div>
+        <p>paragraf 1</p>
+        <p>paragraf 2</p>
+        <section>
+            <p>paragraf 3</p>
+        </section>
+    </div>
+    <p>paragraf 4</p>
+    <section>
+        <h1>paragraf 5</h1>
+        <h1>paragraf 6</h1>
+    </section>
+    <p>paragraf 7</p>
+
+
+
+</body>
+
+</html>

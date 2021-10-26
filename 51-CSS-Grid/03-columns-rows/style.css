@@ -1,0 +1,146 @@
+/* membuat grid-template-columns & grid-template-rows */
+.container {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    /* membuat 3 grid columns */
+    grid-template-columns: 25% auto 50px;
+    /* membat 3 grid rows */
+    grid-template-rows: 50px 100px auto;
+
+}
+
+.container .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+.container .grid-item:nth-child(odd) {
+    background-color: royalblue;
+}
+
+/* explicit & implicit grid 
+
+ciri explicit : ditandai dengan garis solid
+dan garis puts-putus untuk item nya
+
+ciri implicit : ditandai dengan garis titik-titik
+jadi dia akan mengatur sendiri / otomatis
+*/
+.container-dua {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-template-rows: 50px 100px 150px;
+}
+
+.container-dua .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+}
+
+.container-dua .grid-item:nth-child(odd) {
+    background-color: lawngreen;
+}
+
+/* mengatasi implicit dengan
+grid-auto-columns & grid-auto-rows */
+.container-tiga {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-template-rows: 50px 100px 150px;
+    /* mengatasi implicit rows */
+    grid-auto-rows: 100px;
+}
+
+.container-tiga .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.container-tiga .grid-item:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+/* membuat grid column menjadi implicit
+dan mengatasi nya dengan grid-auto-column
+*/
+/* mengatasi implicit dengan
+grid-auto-columns & grid-auto-rows */
+.container-empat {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 50px;
+    /*membuat jadi implicit column  */
+    grid-auto-flow: column;
+    /* mengatasi implicit column */
+    grid-auto-columns: 150px;
+}
+
+.container-empat .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orchid;
+}
+
+.container-empat .grid-item:nth-child(odd) {
+    background-color: orangered;
+}
+
+
+/* contoh menggunakan <line-name> */
+.container-lima {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    grid-template-columns: [kolom-awal] 25% [kolom-dua] auto [kolom-tiga] 50px [kolom-empat];
+    grid-template-rows: [baris-awal] 50px [baris-dua] 100px [baris-tiga] auto [baris-akhir];
+}
+
+.container-lima .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+}
+
+.container-lima .grid-item:nth-child(odd) {
+    background-color: aqua;
+}
+
+/* contoh menggunakan fr / fraction */
+.container-enam {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2.5fr;
+    grid-template-rows: 1.5fr 3fr 1.5fr;
+}
+
+.container-enam .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.container-enam .grid-item:nth-child(odd) {
+    background-color: aquamarine;
+}

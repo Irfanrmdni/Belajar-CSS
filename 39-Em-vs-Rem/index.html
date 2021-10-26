@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39 Em vs Rem</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 
+        em vs rem
+
+        em :
+        - jika tidak ada ukuran font-size pada parent manapun maka ukuran default
+        dari font-size nya adalah 16px. (misal h1=2em jadi 32px , h2=1.5em jadi 24px)
+
+        - jika kita beri ukuran font-size: 2em; ini berati 2x ukuran font-size nya (jadi 32px)
+
+        rem :
+        - perilakunya sama seperti em. jika tidak ada parent yang memiliki font-size
+        maka ukuran default nya 16px
+
+        - jika kita memiliki ukuran font-size pada parent maka rem akan mengabaikan
+        ukuran dari parent tersebut (kecuali di html/root nya itu memiliki font-size maka ini akan terpengaruh)
+
+        tips nya:
+        - untuk mengatur ukuran font-size gunakan rem
+        - untuk mengatur length sebuah elemen (misal: margin,padding,width,height) gunakan em
+        
+    -->
+
+    <div class="container">
+        <h1>Typography</h1>
+        <div class="typography">
+            <div class="col col-em">
+                <h2>em</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, veniam sequi! Assumenda
+                    dolorem, eos, animi ex, omnis sapiente repudiandae atque consequuntur repellat tempora tenetur?
+                    Voluptatem, nostrum cupiditate. Odio nam laborum tempore ex hic vitae architecto voluptatum sint
+                    voluptatem, voluptas dicta quo culpa? Voluptatem ratione error distinctio qui, corporis suscipit
+                    magni, magnam tempore neque, earum quod? Eius expedita praesentium reprehenderit, recusandae impedit
+                    laudantium corporis numquam illum consequatur incidunt vero nam voluptatibus esse atque accusamus ea
+                    quisquam. Aspernatur debitis obcaecati repellat iure temporibus molestiae fugit fugiat hic esse
+                    commodi dolor omnis cumque neque, voluptas eos quidem quia nulla. Dolorem, asperiores maxime labore
+                    qui consectetur quas assumenda perspiciatis minima officia, quam laudantium. Rerum velit beatae,
+                    enim ex ipsum illo voluptates accusamus culpa tempora quae molestias sequi sit odit alias voluptatem
+                    cupiditate excepturi esse quas? Rerum, assumenda ipsum dignissimos blanditiis consequatur,
+                    consectetur dicta molestias obcaecati illo, similique error reprehenderit sunt aliquid? Et non eum,
+                    doloribus minima officiis dolor nemo nostrum esse recusandae harum. Sapiente, molestias,
+                    reprehenderit vel a nesciunt fuga minima tempore laudantium minus maxime tenetur enim, autem
+                    consequatur commodi cupiditate cum ratione architecto eligendi recusandae laborum odio placeat qui?
+                    Fugiat nobis omnis veniam quae voluptates, quo a totam, praesentium molestiae cupiditate dolore
+                    repellat.</p>
+            </div>
+            <div class="col col-rem">
+                <h2>rem</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perspiciatis possimus quae sed
+                    iste nesciunt ad sapiente ex, iusto voluptatibus. Ipsum, obcaecati. Architecto, similique? Expedita
+                    itaque cupiditate earum deleniti labore rem, natus quaerat odit saepe, sequi quos aliquam pariatur
+                    omnis corrupti dolores temporibus quia ea doloremque vel aliquid cum hic fugiat! Laborum saepe hic
+                    exercitationem excepturi, quas, repellendus quaerat sint consectetur cupiditate beatae libero eaque
+                    quidem maiores, dicta cumque ut modi reprehenderit harum vero labore voluptatem quam facilis atque
+                    suscipit? Repudiandae ducimus molestiae laboriosam reprehenderit vel excepturi quibusdam cumque
+                    voluptatibus pariatur suscipit facilis rem animi sunt, beatae consectetur impedit eligendi maiores
+                    vitae fuga illum dolor qui voluptates. Deserunt sed odit cumque repellat animi tempora corporis
+                    maxime laboriosam amet voluptatibus, consequatur in! Nemo eos laudantium mollitia asperiores ipsam
+                    tempora odit voluptatem consectetur, unde quisquam iusto, blanditiis temporibus? Ea aspernatur eos
+                    fugiat nisi, hic, itaque reiciendis quasi vel obcaecati iure saepe unde quaerat aperiam perferendis
+                    consequuntur rerum officia incidunt odio quas dolorem assumenda nostrum facere? Corporis molestiae
+                    doloribus dolorem ea! Iste ad ducimus voluptatum optio, reprehenderit quam at itaque vitae eveniet
+                    officia! Numquam, veniam dolor. Facere debitis molestiae, laudantium fugit velit sapiente quasi quo
+                    totam vero at ad ipsum, officiis libero inventore.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="length">
+        <h2>Title</h2>
+        <a href="#" class="btn">Click Me!</a>
+        <a href="#" class="btn btn-sm">Click Me!</a>
+        <a href="#" class="btn btn-lg">Click Me!</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+@use '../mixin';
+
+// ?ini adalah style untuk header yang dibuat terpisah
+.header {
+    @include mixin.inline-list();
+
+    ul li a {
+        color: white;
+        background-color: rebeccapurple;
+    }
+}

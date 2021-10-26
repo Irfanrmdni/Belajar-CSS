@@ -1,0 +1,13 @@
+$bgColor: lightblue;
+$fontSize: 3rem;
+$textColor: blue;
+
+header {
+    background-color: $bgColor;
+    h1 {
+        font-size: $fontSize;
+    }
+    p {
+        color: $textColor;
+    }
+}

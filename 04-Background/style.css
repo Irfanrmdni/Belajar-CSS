@@ -1,0 +1,44 @@
+.bgcolor {
+    width: 400px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+
+.bgimage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(gambar/1.png);
+}
+
+
+/* contoh menggunakan background position dan repeat */
+body{
+    background-image: url(gambar/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+}
+
+.bgattachment {
+    min-height: 500px;
+    background-image: url(gambar/2.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+.bgblendmode {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(103, 230, 230);
+    background-image: url(gambar/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.bgclip {
+    border: 4px solid black;
+    padding: 35px;
+    background: rgb(255, 255, 255);
+    background-clip: content-box;
+}

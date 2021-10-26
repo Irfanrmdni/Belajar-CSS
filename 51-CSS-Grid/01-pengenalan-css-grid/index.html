@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        CSS GRID
+        - modul css baru untuk mendefinisikan sistem layout berbentuk grid
+        dalam 2 dimensi (baris & kolom)
+        - jadi kita dapat mengatur baris dan kolom sekaligus
+        - sintaks : display: grid;
+
+        kita bisa menggunakan grid sistem sekaligus dengan flexbox 
+    -->
+
+    <!-- membuat layout halaman tanpa menggunakan flexbox dan grid sistem -->
+    <div class="container">
+        <header>Header</header>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+    </div>
+
+    <!-- membuat layout halaman menggunakan flexbox -->
+    <div class="container-dua">
+        <header>Header</header>
+
+        <div class="content">
+            <div class="sidebar">
+                <aside>Aside</aside>
+                <nav>Nav</nav>
+            </div>
+
+            <main>Main</main>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+
+    <!-- membuat layout halaman menggunakan grid sistem -->
+    <div class="container-tiga">
+        <header>Header</header>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

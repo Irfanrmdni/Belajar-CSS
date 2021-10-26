@@ -1,0 +1,74 @@
+/* penggunaan :link */
+.hello:link {
+    color: crimson;
+}
+/* penggunaan :hover */
+.hello:hover {
+    color: black;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* penggunaan :actived */
+.hello:active {
+    font-style: italic;
+    color: chartreuse;
+}
+/* penggunaan :visited */
+.hello:visited{
+    color: brown;
+}
+/* penggunaan :first-child */
+ul li:first-child a {
+    color: rgb(255, 0, 149);
+}
+/* penggunaan :last-child */
+ul li:last-child a {
+    color: rgb(0, 204, 255);
+}
+/* penggunaan :nth-child(n) */
+ul li:nth-child(5) a {
+    color: black;
+}
+/* penggunaan :nth-child(n) */
+ul li:nth-child(even) a:hover {
+    color: rgb(248, 0, 0);
+}
+/* penggunaan :first-of-type */
+p:first-of-type {
+    font-weight: bolder;
+    color: darkblue;
+}
+/* penggunaan :last-of-type */
+p:last-of-type {
+    font-weight: lighter;
+    color: rgb(230, 16, 16);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* penggunaan :nth-last-of-type(n) */
+h2:nth-last-of-type(2) {
+    color: aqua;
+}
+/* penggunaan :focus */
+input:focus {
+    background-color: darkseagreen;
+}
+/* penggunaan :target */
+#paragraf1:target {
+    padding: 10px;
+    background-color: rgb(0, 247, 0);
+}
+/* penggunaan :enable */
+input[type="password"]:enabled {
+    background-color: cornflowerblue;
+}
+/* penggunaan :disable */
+input[type="number"]:disabled {
+    background-color: rgb(63, 63, 63);
+}
+/* penggunaan :checked */
+input:checked {
+    height: 50px;
+    width: 50px;
+}

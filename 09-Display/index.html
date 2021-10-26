@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        <div> dan <span>
+        
+        tag <div> dan <span> tidak memiliki arti apapun. keduanya digunakan untuk
+        mengelompokan tag-tag HTML dan memberikan informasi terhadap tag-tag tersebut
+
+        tag <div> itu memiliki properti display: block
+        tag <span> itu memiliki properti display: inline
+
+        setiap tag HTML itu berada dalam sebuah kotak. properti display pada css
+        mengatur perilaku kotak tersebut
+
+        setiap tag HTML memiliki nilai default untuk properti display. tetapi kita juga dapat
+        mengubah perilaku dari tag tersebut dengan mengganti value-nya
+
+        display value nya memiliki :
+        1. inline
+        - elemen HTML yang secara default tidak menambahkan baris baru ketika dibuat 
+        - lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+        - kita tidak dapat mengatur tinggi dan lebar dari elemen inline. kecuali <img>
+        - margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal
+        
+        contoh elemen nya :
+        <a>
+        <abbr>
+        <acronym>
+        <b>
+        <bdo>
+        <big>
+        <br>
+        <button>
+        <cite>
+        <code>
+        <dfn>
+        <em>
+        <i>
+        <img>
+        <input>
+        <kbd>
+        <label>
+        <map>
+        <object>
+        <output>
+        <q>
+        <samp>
+        <script>
+        <select>
+        <small>
+        <span>
+        <strong>
+        <sub>
+        <sup>
+        <textarea>
+        <time>
+        <tt>
+        <var>
+
+        2. block
+        - elemen HTML yang secara default menambahkan baris baru ketika dibuat
+        - jika tidak diatur lebarnya. maka lebar default dari elemen block akan 
+        memenuhi lebar dari browser
+        - kita dapat mengatur tinggi dan lebar dari elemen block
+        - di dalam elemen block kita dapat menyimpan tag dengan elemen inline, inline-block
+        bahkan elemen block lagi
+
+        contoh elemen nya :
+        <address>
+        <article>
+        <aside>
+        <blockquote>
+        <canvas>
+        <dd>
+        <div>
+        <dl>
+        <dt>
+        <fieldset>
+        <figcaption>
+        <figure>
+        <footer>
+        <form>
+        <h1>-<h6>
+        <header>
+        <hr>
+        <li>
+        <main>
+        <nav>
+        <noscript>
+        <ol>
+        <p>
+        <pre>
+        <section>
+        <table>
+        <tfoot>
+        <ul>
+        <video>
+
+        3. inline-block
+        - tidak ada elemen yang secara default memiliki properti display: inline-block
+        - kita harus ubah secara manual properti tersebut
+        - perilaku dasarnya sama seperti inline 
+        - perbedaanya elemen inline-block dapat kita atur tinggi dan lebar nya
+
+        4. none
+        - digunakan untuk menghilangkan sebuah elemen
+
+
+    -->
+
+    <div class="header">
+        <h1>Selamat datang di <span>website saya</span></h1>
+    </div>
+
+    <div class="navigasi">
+        <h2>Daftar link</h2>
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+        <a href="#">link 4</a>
+    </div>
+
+    <div class="main">
+        <h2>Judul artikel</h2>
+        <img src="logo.jpg" alt="logo">
+        <img src="logo2.png" alt="logo2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo expedita ullam earum. Distinctio ad dignissimos
+            vitae ab numquam, tempore laudantium libero esse, explicabo saepe soluta quo officia doloremque quia labore.
+            Culpa necessitatibus fuga aperiam nisi corporis qui provident distinctio aspernatur assumenda! Dolor, at.
+            Officiis vero obcaecati repudiandae fuga? Dicta in numquam amet. Accusantium sit fugit aspernatur recusandae
+            maxime quasi quae fuga velit dignissimos, iure voluptatem? Obcaecati similique mollitia cupiditate nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, unde sequi quos dolorem quibusdam in magni
+            eligendi. Iusto quod laudantium mollitia, soluta ratione nesciunt eaque exercitationem nulla tempore
+            praesentium explicabo enim adipisci, omnis perferendis neque quisquam in odit consequatur ut suscipit atque?
+            Iure, neque reiciendis.</p>
+    </div>
+
+    <div class="copyright">
+        <p>copyright 2021. pt. mencari cinta sejati</p>
+    </div>
+
+    <span>ini adalah elemen inline 1</span>
+    <span>ini adalah elemen inline 2</span>
+    <span>ini adalah elemen inline 3</span>
+
+    <div class="ubahDisplay">
+        <ul>
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">link 3</a></li>
+            <li><a href="#">link 4</a></li>
+            <li><a href="#">link 5</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

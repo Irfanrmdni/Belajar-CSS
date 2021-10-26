@@ -1,0 +1,75 @@
+h1 {
+    color: blue;
+}
+
+.textalign {
+    text-align: center;
+}
+
+.textalignlast {
+    text-align-last: right;
+}
+
+.textindent {
+    text-indent: 65px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textoverflow {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #333;
+    width: 400px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.textoverflow:hover {
+    white-space: normal;
+}
+
+.textdecorationcolor {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.textdecorationline{
+    text-decoration-line: line-through;
+}
+
+.textdecorationstyle{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.texttransform{
+    text-transform: uppercase;
+}
+
+.letterspacing{
+    letter-spacing: 7px;
+}
+
+.wordspacing{
+    word-spacing: 8px;
+}
+
+.whitespace{
+    white-space: nowrap;
+}
+
+.writtingmode {
+    writing-mode: vertical-rl;
+}
+
+.textshadow{
+    font-size: 44px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}

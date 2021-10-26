@@ -1,0 +1,116 @@
+// ?membuat variabel dengan sintaks css biasa (global)
+// :root {
+//     --primary-color: rgb(148, 208, 248);
+//     --secondary-color: rgb(25, 139, 216);
+//     --text-color: rgb(30, 75, 221);
+// }
+
+// body {
+//     background-color: var(--primary-color);
+// }
+
+// h1 {
+//     color: var(--text-color);
+// }
+
+// ?membuat variabel dengan sintaks sass css (global)
+// $primary-color: rgb(148, 208, 248);
+// $secondary-color: rgb(25, 139, 216);
+// $text-color: rgb(30, 75, 221);
+
+// body {
+//     background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $text-color;
+// }
+
+// ?membuat variabel dengan sintaks sass css (local)
+// body {
+//     $primary-color: rgb(148, 208, 248);
+//     $secondary-color: rgb(25, 139, 216);
+//     $text-color: rgb(30, 75, 221);
+
+//     background-color: $primary-color;
+
+//     h1 {
+//         color: $text-color;
+//     }
+
+//     p {
+//         color: $secondary-color;
+//     }
+// }
+
+// ?membuat variabel local dan mengubahnya menjadi global
+// body {
+//     $primary-color: rgb(148, 208, 248) !global;
+//     $secondary-color: rgb(25, 139, 216) !global;
+//     $text-color: rgb(30, 75, 221) !global;
+
+//     background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $text-color;
+// }
+
+// p {
+//     color: $secondary-color;
+// }
+
+// ?membuat variabel global dan local
+// ?yang terjadi adalah untuk yang body dia akan mengambil yang blue
+// ?untuk yang h1 dan p dia akan mengambil yang salmon
+
+// $primary-color: salmon ;
+
+// body {
+//     $primary-color: blue ;
+//     background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $primary-color;
+// }
+
+// p {
+//     color: $primary-color;
+// }
+
+// ?membuat 2 variabel global yang satunya ada di scope local
+// ?yang terjadi adalah apapun variabel yang ada di global akan diabaikan
+// ?dan dia akan mengambil di variabel global yang ada di scope local
+// $primary-color: salmon ;
+
+// body {
+//     $primary-color: blue !global;
+//     background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $primary-color;
+// }
+
+// p {
+//     color: $primary-color;
+// }
+
+// ?keyword unik variabel di SASS yaitu map
+
+// !kita bisa persingkat dengan cara map
+// $alert-danger: red;
+// $alert-success: green;
+// $alert-warning: orange;
+
+// ?menggunakan map 
+$alert: (
+    'danger': red,
+    'success': green,
+    'warning': orange,
+);
+
+h1 {
+    color: map-get($alert , 'danger');
+}

@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    max-width: 100%;
+    height: 2000px;
+    font-family: poppins , sans-serif;
+    background-color: #ddd;
+}
+
+/* studi kasus 1 - column */
+.container-satu {
+    width: 800px;
+    margin: 40px auto;
+    padding: 10px 5px;
+    background-color: white;
+    display: flex;
+}
+
+.container-satu div {
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.container-satu h2 , .container-satu h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container-satu p {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.kolom-utama {
+    flex: 2;
+    order: 2;
+    background-color: lightblue;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+    background-color: lightcoral;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+    background-color: lightgreen;
+}
+
+/* studi kasus 2 - service */
+.container-dua {
+    max-width: 800px;
+    background-color: white;
+    margin: 40px auto;
+    padding: 10px 5px;
+    background-color: white;
+}
+
+.container-dua div {
+    margin: 0 5px;
+    padding: 8px;
+}
+
+.container-dua div:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.container-dua h4 {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.container-dua p {
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.layanan-satu {
+    border: solid 2px rgb(9, 53, 95);
+    background-color: rgb(179, 233, 255);
+    flex: 1;
+}
+
+.layanan-dua {
+    border: solid 2px rgb(9, 53, 95);
+    background-color: rgb(179, 233, 255);
+    flex: 1;
+}
+
+.layanan-tiga {
+    border: solid 2px rgb(9, 53, 95);
+    background-color: rgb(179, 233, 255);
+    flex: 1;
+}
+
+/* ketika lebar layar minimal 600 keatas */
+@media (min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-dua div:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+/* studi kasus 3 - gallery */
+.container-tiga {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+    padding: 3px;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    display: block; /* agar gambar nya tidak ada jarak */
+}
+
+/* ketika lebar layar minimal 600 keatas */
+@media (min-width: 600px) {
+    .thumbnail {
+        width: 25%;
+    }
+}
+
+/* studi kasus 4 - card */
+.container-empat {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    margin: 12px;
+}
+
+.container-empat .besar {
+    transform: scale(1.1);
+}
+
+.header {
+    background-color: rgb(165, 32, 218);
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.header h2 {
+    font-size: 18px;
+    color: white;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(18, 98, 218);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content p {
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+/* ketika lebar layar minimal 600 keatas */
+@media (min-width: 600px) {
+    .container-empat {
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+/* studi kasus - 5 centering */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 40px auto;
+    border: solid 2px #333;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    /* line-height: 100px; */
+    margin: auto;
+    display: flex;
+}
+
+.container-lima .kotak span {
+    margin: auto;
+}

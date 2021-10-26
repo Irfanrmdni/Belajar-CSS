@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        Flexbox (flexible box module)
+        yang digunakan untuk melayout halaman dengan lebih mudah 
+
+        pengertian :
+        model layout 1 dimensi yang dapat mengatur jarak dan penjajaran antar item
+        dalam sebuah container
+
+        maksud dari (1 dimensi) :
+        hanya dapat mengatur 1 dimensi pada saat tertentu. antara baris atau kolom
+        tidak bisa keduanya sekaligus
+
+        pengertian lain :
+        sebuah modul yang menawarkan cara yang efektif untuk menyusun. mensejajarkan
+        dan mendistribusikan jarak antar item didalam sebuah container. meskipun
+        ukurannya dinamis atau bahkan kita tidak tau
+        
+        contoh :
+        kita punya wadah atau (container) dan didalam nya ada beberapa elemen.
+        nah elemen tersebut disebut dengan (items)
+
+        istilah :
+        1. main axis : ketika set elemen-elemen nya sejajar horizontal. lalu ketika mau diubah
+        maka dinamakan dengan cross axis. misal diubah jadi vertical
+        2. main-size : ukuran container nya. yang akan membuat dimensi dari items nya relatif terhadap main-size
+        3. cross-size : ukuran kolom dari container nya
+        4. main-start & main-end : untuk menentukan awal dan akhir dari elemen/items nya (secara horizontal)
+        5. cross-start & cross-end : untuk menentukan awal dan akhir dari elemen/items nya (secara vertical)
+    
+        sintaks :
+        .container {
+            display: flex;
+
+            artinya membuat elemen parent menjadi flex-box. dan membuat elemen-elemen
+            di dalamnya bisa berperilaku flex juga
+        }
+
+        yang bisa kita kasih di container :
+
+        1. flex-direction : untuk mengatur arah dari elemen-elemen didalamnya
+        bisa secara vertical / kebalikannya . secara horizontal / kebalikannya.
+
+        value nya : row | row-reverse | column | column-reverse . ((default nya row) dari kiri-kanan)
+    
+        2. flex-wrap :untuk mengatur elemen yang kita punya udah gamuat lagi ke container dalam barisnya.
+        agar pindah ke bawah
+
+        value nya : wrap | nowrap | wrap-reverse (default nya nowrap)
+
+        3. justify-content : untuk mengatur rata/jarak elemen-elemen di dalamnya (secara horizontal)
+
+        value : flex-start | flex-end | center | space-between | space-around | space-evenly
+
+        4. align-items : untuk mengatur rata/jarak elemen-elemen di dalamnya (secara vertical)
+    
+        value nya : flex-start | flex-end | center | stretch | baseline
+        untuk (stretch) akan berjalan ketika elemen nya tidak memiliki height
+    
+        5. align-content : untuk mengatur rata/jarak elemen-elemen di dalamnya (secara vertical)
+        namun hanya berfungsi ketika items nya lebih dari 1 baris
+
+        value nya : flex-start | flex-end | center | stretch | space-between | space-around
+    
+        yang bisa kita kasih di items / elemen :
+
+        1. order : untuk mengatur urutan dari elemen-elemen nya (value nya angka)
+        2. flex-grow : untuk mengatur ukuran dari items nya (value nya angka)
+        3. align-self : untuk mengatur 1 elemen saja didalam baris
+        value nya : auto | flex-start | flex-end | center | stretch | baseline
+    
+        ketika menggunakan flexbox di container dan mau items nya di tengah 
+        secara vertical dan horizontal maka kita bisa gunakan margin auto
+    -->
+
+    <!-- contoh 1 -->
+    <h1>container flex-direction</h1>
+    <div class="container">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+    </div>
+
+    <!-- contoh 2 -->
+    <h1>container flex-wrap</h1>
+    <div class="container2">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+        <div class="lima">lima</div>
+        <div class="enam">enam</div>
+        <div class="tujuh">tujuh</div>
+    </div>
+
+    <!-- contoh 3 -->
+    <h1>container justify-content</h1>
+    <div class="container3">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+    </div>
+
+    <!-- contoh 4 -->
+    <h1>container align-items</h1>
+    <div class="container4">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+    </div>
+
+    <!-- contoh 5 -->
+    <h1>container align-content</h1>
+    <div class="container5">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+        <div class="lima">lima</div>
+        <div class="enam">enam</div>
+        <div class="tujuh">tujuh</div>
+        <div class="delapan">delapan</div>
+    </div>
+
+    <!-- contoh 6 -->
+    <h1>items order</h1>
+    <div class="container6">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+    </div>
+
+    <!-- contoh 7 -->
+    <h1>items flex-grow</h1>
+    <div class="container7">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+    </div>
+
+    <!-- contoh 8 -->
+    <h1>items align-self</h1>
+    <div class="container8">
+        <div class="satu">satu</div>
+        <div class="dua">dua</div>
+        <div class="tiga">tiga</div>
+        <div class="empat">empat</div>
+    </div>
+</body>
+
+</html>

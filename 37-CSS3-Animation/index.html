@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37 CSS3 Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        Animation
+
+        sintaks untuk membuat animasi:
+        @keyframes [nama animasi] {
+            from {
+                [property-css]
+            }
+
+            to {
+                [property-css]
+            }
+        }
+
+        kita juga bisa mengganti from - to nya dengan %
+        jika hanya butuh 2 keadaan maka gunakan from-to
+
+        sintaks untuk menggunakan animasi:
+        animation: [nama animasi] [duration] [timing] [delay] [interation-count]
+        [direction] [fill-mode] [play-state];
+
+        [interation-count]  : pengulangan animasi 
+        nilai nya : angka | infinite
+        <angka>    itu mau berapa kali di ulang nya
+        <infinite> itu akan di ulang terus-menerus
+
+        [direction]         : jalan nya animasi
+        nilai nya : normal | reverse | alternate | alternate-reverse
+        normal : animasi nya akan bergerak normal dari awal-akhir
+        reverse : animasi nya akan bergerak dari akhir-awal
+        alternate : animasi nya akan bergerak dari awal-akhir dan balik lagi dari akhir-awal
+        alternate-reverse : animasi nya akan mulai bergerak nya dari akhir dulu
+    
+        [fill-mode] : untuk menentukan akhir dari transisi nya mau seperti apa
+        nilai nya : none | forwards | backwards | both
+        none : default nya
+        forwards : fungsi nya agar animasi nya tidak kembali ke posisi awal jadi berhenti di akhir
+        backwards : kebalikan nya dari forwards
+        both :
+
+        [play-state] : untuk membuat animasi nya berjalan / tidak
+        nilai nya : running | paused
+        running : default nya
+        paused : untuk memberhentikan animasi
+    -->
+
+    <div class="kotak kotak1"></div>
+    <div class="kotak kotak2"></div>
+    <div class="kotak3"></div>
+    <div class="kotak4"></div>
+    <div class="kotak5"></div>
+    <div class="kotak6"></div>
+</body>
+
+</html>

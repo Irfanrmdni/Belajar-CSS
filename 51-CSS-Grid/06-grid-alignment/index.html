@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 grid alignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+
+        Grid alignment fungsi nya sama seperti di flexbox
+
+        12. justify-items   : untuk mensejajarkan grid item secara horizontal
+        value (start | end | center | stretch) - default nya stretch
+
+        13. align-items     : untuk mensejajarkan grid item secara vertical
+        value (start | end | center | stretch)
+
+        14. place-items     : shorthand untuk menulis justify-items dan align-items dalam satu deklarasi
+        value (align-items justify-items)
+        
+
+        15. justify-content : mengatur posisi seluruh grid container pada sumbu horizontal 
+        ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran container nya
+        biasanya ketika grid items nya menggunakan ukuran fixed
+        value (start | end | center | stretch | space-around | space-between | space-evenly)
+
+        16. align-content   : sama seperti justify-content tapi kebalikan nya
+        value (start | end | center | stretch | space-around | space-between | space-evenly)
+
+        17. place-content   : shorthand untuk menulis justify-content dan align-content dalam satu deklarasi
+        value (align-content justify-content)
+
+    -->
+
+    <!-- justify-items -->
+    <div class="container">
+        <div class="grid-item i1">1</div>
+        <div class="grid-item i2">2</div>
+        <div class="grid-item i3">3</div>
+        <div class="grid-item i4">4</div>
+        <div class="grid-item i5">5</div>
+        <div class="grid-item i6">6</div>
+        <div class="grid-item i7">7</div>
+        <div class="grid-item i8">8</div>
+        <div class="grid-item i9">9</div>
+    </div>
+
+    <!-- align-items -->
+    <div class="container-dua">
+        <div class="item g1">1</div>
+        <div class="item g2">2</div>
+        <div class="item g3">3</div>
+        <div class="item g4">4</div>
+        <div class="item g5">5</div>
+        <div class="item g6">6</div>
+        <div class="item g7">7</div>
+        <div class="item g8">8</div>
+        <div class="item g9">9</div>
+    </div>
+
+    <!-- place-items -->
+    <div class="container-tiga">
+        <div class="items h1">1</div>
+        <div class="items h2">2</div>
+        <div class="items h3">3</div>
+        <div class="items h4">4</div>
+        <div class="items h5">5</div>
+        <div class="items h6">6</div>
+        <div class="items h7">7</div>
+        <div class="items h8">8</div>
+        <div class="items h9">9</div>
+    </div>
+
+    <!-- justify-content -->
+    <div class="container-empat">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+
+    <!-- align-content -->
+    <div class="container-lima">
+        <div class="items a1">1</div>
+        <div class="items a2">2</div>
+        <div class="items a3">3</div>
+        <div class="items a4">4</div>
+        <div class="items a5">5</div>
+        <div class="items a6">6</div>
+        <div class="items a7">7</div>
+        <div class="items a8">8</div>
+        <div class="items a9">9</div>
+    </div>
+
+    <!-- place-content -->
+    <div class="container-enam">
+        <div class="items a1">1</div>
+        <div class="items a2">2</div>
+        <div class="items a3">3</div>
+        <div class="items a4">4</div>
+        <div class="items a5">5</div>
+        <div class="items a6">6</div>
+        <div class="items a7">7</div>
+        <div class="items a8">8</div>
+        <div class="items a9">9</div>
+    </div>
+</body>
+
+</html>

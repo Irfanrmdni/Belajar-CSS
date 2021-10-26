@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri foto & Lightbox</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Project membuat galeri foto dan lightbox -->
+
+    <h1>The Avengers.</h1>
+    <div class="container">
+        <ul class="galeri">
+            <li>
+                <a href="#gambar-1">
+                    <img src="asset/thumb/black-widow-thumb.jpg" alt="black widow">
+                    <span>Black Widow</span>
+                </a>
+
+                <div class="overlay" id="gambar-1">
+                    <a href="#" class="close">X</a>
+                    <a href="#gambar-4" class="prev">prev</a>
+                    <img src="asset/full/black-widow-full.jpg" alt="black widow">
+                    <a href="#gambar-2" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-2">
+                    <img src="asset/thumb/captain-america-thumb.jpg" alt="captain america">
+                    <span>Captain America</span>
+                </a>
+
+                <div class="overlay" id="gambar-2">
+                    <a href="#" class="close">X</a>
+                    <a href="#gambar-1" class="prev">prev</a>
+                    <img src="asset/full/captain-america-full.jpg" alt="captain america">
+                    <a href="#gambar-3" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-3">
+                    <img src="asset/thumb/spiderman-thumb.jpg" alt="spiderman">
+                    <span>Spiderman</span>
+                </a>
+
+                <div class="overlay" id="gambar-3">
+                    <a href="#" class="close">X</a>
+                    <a href="#gambar-2" class="prev">prev</a>
+                    <img src="asset/full/spiderman-full.jpg" alt="spiderman">
+                    <a href="#gambar-4" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-4">
+                    <img src="asset/thumb/wanda-maximoff-thumb.jpg" alt="wanda maximoff">
+                    <span>Wanda Maximoff</span>
+                </a>
+
+                <div class="overlay" id="gambar-4">
+                    <a href="#" class="close">X</a>
+                    <a href="#gambar-3" class="prev">prev</a>
+                    <img src="asset/full/wanda-maximoff-full.jpg" alt="wanda maximoff">
+                    <a href="#gambar-1" class="next">next</a>
+                </div>
+            </li>
+
+            <div class="clear"></div>
+        </ul>
+    </div>
+</body>
+
+</html>

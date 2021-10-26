@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 Grid Area & Grid Gap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        6.  grid-template-area : 
+        - mendefinisikan grid template menggunakan nama dari area yang ditulis
+        pada property grid-area pada item.
+        - jadi nanti item nya akan memakai nama tersebut / nama area nya
+        - digunakan di container dan di item jga
+
+        sintaks :
+        grid-template-areas: "<nama-area>"  "<nama-area>" "<nama-area>";
+        
+        untuk memanggil di item nya gunakan sintaks : grid-area: <nama-area>;
+
+        7.  grid-template :
+        shorthand untuk mendefinisikan grid-template-rows , grid-template-columns dan 
+        grid-template-areas dalam satu deklarasi.
+
+        sintaks :
+        grid-template: grid-template-rows | grid-template-columns / grid-template-areas
+
+        mulainya harus grid-template-rows dulu
+        
+
+        8.  grid-column-gap
+        9.  grid-row-gap
+
+        grid-column-gap & grid-row-gap :
+        mendefinisikan ukuran grid-line / jarak antar baris atau kolom
+
+        sintaks yang baru :
+        column-gap & row-gap
+
+        10. grid-gap
+        11. grid
+    -->
+
+    <div class="container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <div class="container-dua">
+        <div class="grid-item header">header</div>
+        <div class="grid-item sidebar">sidebar</div>
+        <div class="grid-item content">content</div>
+        <div class="grid-item footer">footer</div>
+        <!-- <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  -->
+    </div>
+
+    <!-- shorthand grid-template -->
+    <div class="container-tiga">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <!-- grid-column-gap & grid-row-gap -->
+    <div class="container-empat">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+
+</html>

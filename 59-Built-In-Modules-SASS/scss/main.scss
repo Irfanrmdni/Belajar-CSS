@@ -1,0 +1,79 @@
+// ?base
+$warna-dasar: salmon;
+
+.heading-satu,
+.heading-dua,
+.heading-tiga,
+.heading-empat,
+.heading-lima,
+.heading-enam,
+.heading-tujuh,
+.heading-delapan,
+.heading-sembilan,
+.heading-sepuluh,
+.heading-sebelas {
+    color: $warna-dasar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+// ?built in modules / function : color
+
+// 1. adjust color();
+// value nya : $red: null , $green: null , $blue: null , $hue: null
+// $saturation: null , $lightness: null , $whiteness: null , $$blackness: null
+// $alpha: null
+.heading-satu {
+    color: adjust-color($color: $warna-dasar, $green: 100, $blue: 100, $red: -50);
+}
+
+// 2. adjust-hue($color , degrees / roda warna)
+.heading-dua {
+    color: adjust-hue($color: $warna-dasar, $degrees: 30);
+}
+
+// 3. complemenet / warna yang berlawanan pada roda warna
+.heading-tiga {
+    color: complement($color: $warna-dasar);
+}
+
+// 4. darken ($color: , $amount: ) / semakin besar nilai nya semakin gelap / dark
+.heading-empat {
+    color: darken($color: $warna-dasar, $amount: 20%);
+}
+
+// 5. lighten ($color: , $amount: ) / semakin besar nilai nya semakin terang / light
+.heading-lima {
+    color: lighten($color: $warna-dasar, $amount: 10%);
+}
+
+// 6. saturate ($color: , $amount: )/ tingkat kemurnian warna semkain besar nilai nya semakin murni
+.heading-enam {
+    color: saturate($color: $warna-dasar, $amount: 10%);
+}
+
+// 7. desaturate ($color: , $amount: )/ tingkat kepudaran warna semkain besar nilai nya semakin pudar
+.heading-tujuh {
+    color: desaturate($color: $warna-dasar, $amount: 50%);
+}
+
+// 8. grayscale ($color:)/ membuat warna menjadi hitam/abu
+.heading-delapan {
+    color: grayscale($warna-dasar);
+}
+
+// 9. mix ($color1 , $color2 ,weight: 50%)/ campuran 2 warna
+.heading-sembilan {
+    color: mix($warna-dasar, blue, 70%);
+}
+
+// 10. fade-in ($color1 , amount: 0-1)/ membuat warna dari transparan menjadi solid
+.heading-sepuluh {
+    color: fade-in(rgba(250, 128, 114, 0.1), 0.5);
+}
+
+// 11. fade-out ($color1 , amount: 0-1)/ kebalikan nya
+.heading-sebelas {
+    color: fade-out($warna-dasar, 0.5);
+}

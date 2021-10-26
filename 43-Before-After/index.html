@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43 Before & After</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        ::before & ::after
+        adalah sebuah pseudo elemen yang memungkinkan kita untuk menambahkan
+        kontent (sebelum/sesudah elemen) pada halaman HTML hanya melalui CSS saja
+        (tanpa harus menambahkannya pada kode HTML)
+        
+        pseudo elemen adalah bagian dari sebuah elemen yang dapat kita beri style
+        secara terpisah
+
+        intinya dalam menggunakan ::before & ::after harus ada content (jika content kosong diperbolehkan)
+    
+        yang bisa kita tulis didalam content :
+        1. string (content: "tulisan/text";)
+        bisa berupa tulisan/text bisa juga entitas/unicode 
+        2. image (content: url(path/ke/gambar.jpg);)
+        bisa berupa gambar namun tidak bisa di resize bisa juga gradient
+        3. kosong (content: "";)
+        berguna jika akan membuat sebuah elemen baru yang tidak ada tulisan nya
+        atau melakukan clearfix juga bisa
+        4. counter (content: counter(item);)
+        berguna untuk memberi style pada list
+    -->
+
+    <!-- contoh 1 -->
+    <div class="hello">hello</div>
+
+    <!-- contoh 2 -->
+    <div class="kotak"></div>
+
+    <!-- contoh 3 -->
+    <h1>HOME</h1>
+
+    <!-- contoh 4 -->
+    <p>
+        <a href="#">Home</a>
+        <a href="#">Tim</a>
+        <a href="#">Programmer</a>
+    </p>
+
+    <!-- contoh 5 -->
+    <blockquote>
+        hirupmah tuturken weh kata hate sorangan ulah nurutan batur sakitu weh ti pusatmah.
+    </blockquote>
+    <p>- irfan ramdani</p>
+</body>
+
+</html>

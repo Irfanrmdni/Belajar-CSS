@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>54 Nesting SASS</title>
+</head>
+
+<body>
+    <!-- 
+        ?Nesting SASS
+        
+        sebelum itu kita akan konfigurasi extension SASS nya agar dapat membuat file
+        CSS nya secara otomatis terpisah.
+        cara nya dengan menambahkan :
+        "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "css"
+        }
+    ],
+    di JSON -> formats
+
+    karakter & (parent selector) :
+    jadi kita bisa mentarget elemen parent pada saat kita melakukan Nesting
+
+
+    -->
+
+    <div class="container">
+        <!-- ?section -->
+        <section class="main">
+            <div class="main-heading">
+                <h1>Hello irfan.</h1>
+            </div>
+            <div class="main-paragraf">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi facere, maxime soluta dolore
+                    obcaecati perspiciatis repellendus libero deleniti eius molestias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius iste asperiores
+                    reprehenderit quas omnis eaque iure accusantium libero? Porro nulla labore nostrum ipsam accusantium
+                    officiis perspiciatis a iusto vel.</p>
+            </div>
+        </section>
+
+        <!-- ?footer -->
+        <footer class="footer">
+            <div class="footer-heading">
+                <h1>Footer irfan.</h1>
+            </div>
+            <div class="footer-paragraf">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sequi.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga et iste facere itaque sunt alias
+                    accusamus voluptas soluta illo dolore!</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

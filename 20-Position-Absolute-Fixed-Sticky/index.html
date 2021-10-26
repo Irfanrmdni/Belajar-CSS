@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Position Absolute dan Fixed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        Position absolute :
+        - ketika kita menggerakan elemen dengan posisi absolute. ruang yang ditempati
+        oleh elemen tersebut dianggap tidak ada
+        - ketika kita menggerakan elemen dengan posisi absolute. elemen akan bergerak
+        relative terhadap posisi dari elemen parent nya. (selama parent nya memiliki posisi non-static juga)
+        - jika kita memberi properti top: 0 dan left: 0 maka elemen akan berada
+        di ujung kiri atas dari elemen parent nya
+
+        Position fixed :
+        - perilakunya mirip dengan absolute
+        - ketika kita memberi top: left: right: bottom: maka posisinya akan relative 
+        terhadap window/body meskipun parent nya sudah kita beri posisi non-static
+        - jadi fixed tidak mempedulikan elemen parent nya meskipun parent nya sudah 
+        diberi posisi non-static
+        - ketika di scroll halaman nya elemen nya akan tetap diam / terkunci
+
+        position sticky :
+        - campuran antara position relative dan fixed
+        - ketika kita memberi top: 100px. maka ketika discroll dan elemen nya sudah berada di atas dengan jarak 100px
+        maka elemen tersebut akan fixed / diam
+    -->
+
+    <!-- kasus 1 : ini parent nya adalah body -->
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+
+    <!-- kasus 2 : ini parent nya adalah container -->
+    <div class="container">
+        <div class="empat"></div>
+        <div class="lima"></div>
+        <div class="enam"></div>
+        <div class="cobafixed"></div>
+    </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos dolor quod quas laudantium eligendi nam cumque
+        optio asperiores saepe minus omnis fugit soluta laborum esse enim doloremque corrupti, accusamus illo?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores earum voluptatem suscipit ratione quis
+        veritatis, error consequuntur ullam mollitia cum nobis laudantium eveniet architecto autem sit ad reprehenderit
+        soluta magnam! Unde ipsa nostrum error tempora, doloribus beatae debitis impedit tempore vero dolor rem
+        repudiandae maiores id eos magnam quidem expedita eius dolore. Soluta dicta veritatis maiores sed eum nulla,
+        doloremque, quae deserunt repellat exercitationem maxime nobis. Temporibus blanditiis optio atque debitis
+        repudiandae eos nesciunt excepturi enim, impedit at natus et recusandae explicabo corporis totam repellendus
+        maiores provident fuga! Ad quod architecto, hic a iste atque veniam maiores itaque dolores voluptatum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores earum voluptatem suscipit ratione quis
+        veritatis, error consequuntur ullam mollitia cum nobis laudantium eveniet architecto autem sit ad reprehenderit
+        soluta magnam! Unde ipsa nostrum error tempora, doloribus beatae debitis impedit tempore vero dolor rem
+        repudiandae maiores id eos magnam quidem expedita eius dolore. Soluta dicta veritatis maiores sed eum nulla,
+        doloremque, quae deserunt repellat exercitationem maxime nobis. Temporibus blanditiis optio atque debitis
+        repudiandae eos nesciunt excepturi enim, impedit at natus et recusandae explicabo corporis totam repellendus
+        maiores provident fuga! Ad quod architecto, hic a iste atque veniam maiores itaque dolores voluptatum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores earum voluptatem suscipit ratione quis
+        veritatis, error consequuntur ullam mollitia cum nobis laudantium eveniet architecto autem sit ad reprehenderit
+        soluta magnam! Unde ipsa nostrum error tempora, doloribus beatae debitis impedit tempore vero dolor rem
+        repudiandae maiores id eos magnam quidem expedita eius dolore. Soluta dicta veritatis maiores sed eum nulla,
+        doloremque, quae deserunt repellat exercitationem maxime nobis. Temporibus blanditiis optio atque debitis
+        repudiandae eos nesciunt excepturi enim, impedit at natus et recusandae explicabo corporis totam repellendus
+        maiores provident fuga! Ad quod architecto, hic a iste atque veniam maiores itaque dolores voluptatum?</p>
+    <div class="coba-sticky">position sticky</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquam possimus quasi minima repellendus hic fugit
+        quod deserunt ex delectus quidem, perferendis illum explicabo similique earum odio alias soluta sequi, provident
+        doloribus nisi! Nostrum aliquam enim sunt perferendis accusamus iure nihil dolorum, impedit, asperiores rem,
+        necessitatibus fugiat quod laudantium nemo. Voluptatem aperiam deleniti explicabo distinctio ut amet tenetur
+        reprehenderit quod architecto consectetur reiciendis quis maxime vero, iure minus, atque sed perspiciatis.
+        Tenetur fuga atque deserunt quisquam sint harum dolore qui consectetur soluta esse et molestiae, mollitia quasi
+        doloremque blanditiis numquam facilis necessitatibus veritatis placeat possimus labore culpa inventore rem
+        laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium saepe veritatis numquam perspiciatis?
+        Sapiente
+        totam dolorem deleniti vero laboriosam. Inventore alias architecto consequuntur illum consequatur aut, non
+        officia
+        vitae quae voluptatum, hic id, saepe perspiciatis dolorum dignissimos veritatis voluptates nam earum iusto
+        maxime
+        culpa! Aliquam molestias reiciendis odit eaque laudantium soluta, in necessitatibus officiis inventore. Optio
+        ullam
+        ipsam eligendi dolore. Facere maiores eos maxime nam! Iste, autem, eius quaerat amet sed reprehenderit, atque
+        culpa
+        ipsam doloribus incidunt doloremque exercitationem ratione fuga maiores ab mollitia voluptas rerum inventore
+        veritatis esse porro unde non molestiae sapiente! Incidunt in minus facere qui soluta!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores earum voluptatem suscipit ratione quis
+        veritatis, error consequuntur ullam mollitia cum nobis laudantium eveniet architecto autem sit ad reprehenderit
+        soluta magnam! Unde ipsa nostrum error tempora, doloribus beatae debitis impedit tempore vero dolor rem
+        repudiandae maiores id eos magnam quidem expedita eius dolore. Soluta dicta veritatis maiores sed eum nulla,
+        doloremque, quae deserunt repellat exercitationem maxime nobis. Temporibus blanditiis optio atque debitis
+        repudiandae eos nesciunt excepturi enim, impedit at natus et recusandae explicabo corporis totam repellendus
+        maiores provident fuga! Ad quod architecto, hic a iste atque veniam maiores itaque dolores voluptatum?</p>
+</body>
+
+
+
+</html>

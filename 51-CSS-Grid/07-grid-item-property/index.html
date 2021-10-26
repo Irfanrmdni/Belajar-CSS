@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 grid item property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        property yang ada di item :
+        1.  grid-column-start: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        2.  grid-column-end: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        3.  grid-row-start: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        4.  grid-row-end: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        
+        : menentukan tempat dari grid item dengan mengacu pada nomor atau nama
+        grid line yang spesifik
+
+        <nomor> | <nama> : untuk mengacu pada nomor atau nama yang kita beri pada grid line
+        span <nomor>     : item akan memanjang / melebar sampai sejumlah nomor
+        span <nama>      : item akan memanjang / melebar sampai ke nama grid line tertentu
+
+        span artinya tambah 2
+
+        5.  grid-column: <start-line> / <end-line> | <start-line> / span <value>
+        6.  grid-row: <start-line> / <end-line> | <start-line> / span <value>
+        
+        : shorthand untuk start dan end pada grid column & grid row
+
+        7.  grid-area: <name> | <row-start> / <column-start> | <row-end> / <column-end> 
+        - menentukan nama area pada item sesuai dengan template yang sudah
+        - dibuat sebelumnya melalui properti grid=template-areas
+
+        bisa digunakan sebagai shorthand untuk grid-column-start , grid-column-end , grid-row-start , grid-row-end
+
+        8.  justify-self: start | end | center | stretch
+        mengatur posisi item pada sebuah cell terhadap sumbu horizontal
+
+        9.  align-self: start | end | center | stretch
+        mengatur posisi item pada sebuah cell terhadap sumbu vertical
+
+        10. place-self: <align-self> <justify-self>
+        shorthand untuk mengatur posisi item pada sebuah cell terhadap sumbu
+        vertical dan horizontal dalam satu deklarasi
+
+    -->
+
+    <!--   
+            grid-column-start
+            grid-column-end:
+            grid-row-start:
+            grid-row-end: 
+    -->
+    <div class="container">
+        <div class="items my-items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+
+    <!-- 
+        grid-column:
+        grid-row:
+    -->
+    <div class="container-dua">
+        <div class="items my-items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+
+    <!-- grid-area -->
+    <div class="container-tiga">
+        <div class="items header">1</div>
+        <div class="items sidebar">2</div>
+        <div class="items content">3</div>
+        <div class="items footer">4</div>
+    </div>
+
+    <!-- 
+        justify-self
+    -->
+    <div class="container-empat">
+        <div class="items my-items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+
+    <!-- 
+        align-self
+    -->
+    <div class="container-lima">
+        <div class="items my-items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+
+    <!-- 
+        place-self
+    -->
+    <div class="container-enam">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+</body>
+
+</html>

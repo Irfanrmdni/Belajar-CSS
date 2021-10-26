@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    height: 70px;
+    background: rgb(13,59,182);
+    background: linear-gradient(45deg, rgba(13,59,182,1) 0%, rgba(222,33,235,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+
+
+.logo img {
+    width: 25%;
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(247, 215, 34);
+}
+
+/* hamburger */
+.menu-toggle {
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all .4s ease-in-out;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* animation hamburger */
+.menu-toggle span:nth-child(2) {
+    transform-origin: left;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: left;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px , 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+/* responsive */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        background: rgb(13,59,182);
+        background: linear-gradient(45deg, rgba(13,59,182,1) 0%, rgba(222,33,235,1) 100%);
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 70%;
+        justify-content: space-evenly;
+        z-index: -1;
+        margin-top: 5%;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        border-bottom: solid 3px white;
+    }
+}

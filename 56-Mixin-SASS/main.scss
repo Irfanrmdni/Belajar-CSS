@@ -1,0 +1,120 @@
+// ?membuat display nya inline-block dan margin padding 0 
+// ?hanya untuk element header dan footer dengan css biasa
+// .header ul,
+// .footer ul
+// {
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+// }
+
+// .header ul li,
+// .footer ul li {
+//     display: inline-block;
+// }
+
+// ?membuat display nya inline-block dan 
+// ?margin padding nya 0 dengan menggunakan mixin
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ul li {
+        display: inline-block;
+    }
+
+    ul li a {
+        padding: 5px 15px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+// ?cara memanggilnya
+.header {
+    @include inline-list();
+
+    ul li a {
+        color: white;
+        background-color: rebeccapurple;
+    }
+}
+
+.footer {
+    @include inline-list();
+    ul li a {
+        color: white;
+        background-color: rgb(51, 104, 153);
+    }
+}
+
+// ?mixin dengan arguments tanpa memberi nilai default
+// !jika iclude nya tidak diberi nilai arguments maka akan error
+// @mixin flexbox($direction) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+
+// .container {
+//     @include flexbox(column-reverse);
+//     width: 600px;
+//     height: 400px;
+//     background-color: #eaeaea;
+//     .box {
+//         width: 60px;
+//         height: 60px;
+//         text-align: center;
+//         line-height: 60px;
+//         background-color: lightblue;
+//     }
+// }
+
+// ?mixin dengan arguments dengan memberi nilai default
+// !jika sudah diberi nilai default pada arguments maka tidak akan error
+// ?!ketika memanggil include nya itu tidak diberi nilai
+// @mixin flexbox($direction: row) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+
+// .container {
+//     @include flexbox();
+//     width: 600px;
+//     height: 400px;
+//     background-color: #eaeaea;
+//     .box {
+//         width: 60px;
+//         height: 60px;
+//         text-align: center;
+//         line-height: 60px;
+//         background-color: lightblue;
+//     }
+// }
+
+// ?mixin dengan arguments lebih dari 1
+@mixin flexbox($direction: row , $justify-content: flex-start) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.container {
+    @include flexbox(column , space-evenly);
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+    .box {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: lightblue;
+    }
+}

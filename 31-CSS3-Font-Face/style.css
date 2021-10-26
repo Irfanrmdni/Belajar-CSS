@@ -1,0 +1,22 @@
+
+/* menggunakan font default dari sistem operasi kita */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* menggunakan font dari google font */
+p {
+    font-family: 'Merriweather', serif;
+}
+
+/* menggunakan font dari font-face */
+@font-face{
+    font-family: "kaushanScript";
+    src: url('KaushanScript-Regular.otf') format('opentype');
+}
+
+h2 {
+    font-size: 65px;
+    text-align: center;
+    font-family: "kaushanScript";
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-Position Static Relative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        Position memungkinkan kita untuk menggeserkan sebuah elemen 
+        tanpa mempengaruhi elemen di sekitarnya 
+
+        ketika elemen diberi position selai static maka elemen tersebut akan 
+        naik 1 dimensi dan kita dapat memberi properti top, left, right, bottom
+
+        value :
+        1. static :
+        - nilai default dari tiap-tiap elemen ketika tidak diberi properti position
+        - menggunakan position selain static akan membuat sebuah elemen menjadi
+        seolah-olah berbeda dimensi dari elemen lainnya
+        - elemen yang diberi position selain static dapat menggunakan properti
+        top, left, right, bottom untuk mengatur posisinya
+
+        2. relative :
+        - ketika kita menggerakan elemen dengan posisi relative. ruang yang ditempati
+        oleh elemen tersebut masih ada
+        - ketika kita menggerakan elemen dengan posisi relative. elemen akan bergerak 
+        relative terhadap posisi semula-nya
+        - jika kita memberi properti top: 0 dan left: 0 maka elemen tidak berubah posisinya
+    
+    -->
+
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+
+</html>

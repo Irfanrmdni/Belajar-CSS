@@ -1,0 +1,33 @@
+h1 {
+    color: green;
+}
+
+h1 {
+    color: blue;
+}
+
+/* ini akan menimpa dari color green
+jadi yang akan berubah adalah warna biru
+karena berat beban nya sama-sama 1
+*/
+
+#h2 {
+    color: rgb(128, 0, 117);
+}
+
+h2 {
+    color: blue;
+}
+
+/* ini tidak akan menimpa dari color green
+karena berat beban nya ID itu lebih besar dari tag elemen
+jadi yang akan berubah yaitu color green
+*/
+
+ul#sarapan li {
+    color: green;
+}
+
+ul#sarapan li.favorit {
+    color: red;
+}

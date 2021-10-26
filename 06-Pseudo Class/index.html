@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-Pesudo class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        kelas semu yang dimiliki oleh sebuah elemen HTML. yang membuat kita
+        dapat mendefinisikan style pada keadaan tertentu dari elemen tersebut
+
+        Pesudo class yang berhubungan dengan link :
+        1. :link     = style default pada sebuah link 
+        2. :hover    = style ketika kursos mouse berada diatas sebuah link
+        3. :active   = style ketika sebuah link di-klik (keadaan aktif)
+        4. :visited  = style ketika sebuah link sudah pernah dikunjungi sebelumnya
+        5. :focus    = style ketika teks tautan tersebut menerima fokus inputan keyboard
+                    atau ketika teks tautan tersebut diseleksi
+        6. :target   = dipakai bersama dengan ID dan bekerja saat hash tag di URL saat ini bertemu dengan nama ID. 
+        7. :enabled  = Memilih input yang berada dalam status enabled dan siap dipakai.
+        8. :disabled = Memilih input yang berada dalam status disabled
+        9. :checked  = Memilih checkbox yang sedang terpilih.
+
+        Pesudo class yang berhubungan dengan posisi elemen :
+        1. :first-child         = memilih elemen pertama dari sebuah parent
+        2. :last-child          = memilih elemen terakhir dari sebuah parent
+        3. :nth-child(n)        = memilih elemen ke-n dari sebuah parent. bisa berurutan, even/genap dan odd/ganjil
+        4. :nth-last-of-type(n) = memilih elemen ke-n yang dimulai dari elemen terakhir        
+        5. :first-of-type       = memilih elemen pertama dari sebuah jenis / tipe tag
+        6. :last-of-type        = memilih elemen terakhir dari sebuah jenis / tipe tag
+    -->
+
+    <a href="#" class="hello">Hello World.</a>
+
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#">link 5</a></li>
+        <li><a href="#">link 6</a></li>
+        <li><a href="#">link 7</a></li>
+        <li><a href="#">link 8</a></li>
+        <li><a href="#">link 9</a></li>
+        <li><a href="#">link 10</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores in eveniet delectus ducimus eos fugit fugiat,
+        enim, possimus esse libero minus aliquid consectetur reprehenderit placeat error odio eum blanditiis veniam
+        corrupti quaerat officiis! Soluta velit laborum magni veritatis magnam suscipit ex error facilis tempore ipsa
+        cum similique, aliquam distinctio culpa illum nemo autem porro quidem quod sed esse perspiciatis pariatur
+        ducimus! Accusamus unde sed, iure incidunt, laboriosam corporis ullam officia modi optio magni culpa labore
+        quod. Quisquam laborum excepturi quam harum voluptatibus aut rerum animi ab nemo deleniti error accusamus, cum
+        vel culpa? Amet explicabo, ipsam similique nam harum ipsum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores in eveniet delectus ducimus eos fugit fugiat,
+        enim, possimus esse libero minus aliquid consectetur reprehenderit placeat error odio eum blanditiis veniam
+        corrupti quaerat officiis! Soluta velit laborum magni veritatis magnam suscipit ex error facilis tempore ipsa
+        cum similique, aliquam distinctio culpa illum nemo autem porro quidem quod sed esse perspiciatis pariatur
+        ducimus! Accusamus unde sed, iure incidunt, laboriosam corporis ullam officia modi optio magni culpa labore
+        quod. Quisquam laborum excepturi quam harum voluptatibus aut rerum animi ab nemo deleniti error accusamus, cum
+        vel culpa? Amet explicabo, ipsam similique nam harum ipsum.</p>
+
+    <h2 id="paragraf1">hello world.1</h2>
+    <h2>hello world.2</h2>
+    <h2>hello world.3</h2>
+
+    <form>
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname">
+        password: <input type="password" name="password">
+        number: <input type="number" name="number" disabled>
+    </form>
+
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+        <input type="checkbox" value="Car"> I have a car
+    </form>
+</body>
+
+</html>

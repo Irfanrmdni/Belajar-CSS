@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-Padding Border & Box sizing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        css box model terdiri dari 4 komponen
+        1. margin   = area transparan disekitar kotak (diluar kotak)
+        2. border   = batas disekeliling margin dan padding
+        3. padding  = area transparan didalam kotak (antara content dan border)
+        4, content  = konten sebenarnya didalam box 
+
+        padding sama seperti margin tapi yang membedakan :
+        1. padding tidak bisa diberi nilai negatif
+        2. padding tidak bisa diberi nilai auto
+        3. padding menambahkan ukuran elemen
+
+        border juga sama seperti padding :
+        1. border akan menambahkan ukuran elemen
+
+        penggunaan border :
+        border: width style color;
+
+        untuk style ada 4 tipe :
+        1. solid
+        2. dotted
+        3. dashed
+        4. double
+
+        box-sizing adalah properti untuk mengatasi dari margin / padding
+        agar tidak menambah ukuran elemen
+    -->
+
+    <!-- contoh penggunaan padding -->
+    <div class="kasus1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+
+    <!-- contoh penggunaan padding menambahkan ukuran elemen -->
+    <div class="kasus2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+
+    <!-- contoh penggunaan border -->
+    <div class="kasus3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+
+    <!-- contoh penggunaan border dengan style berbeda -->
+    <div class="kasus4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+
+    <!-- contoh penggunaan border hanya bagian tertentu -->
+    <div class="kasus5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+
+    <!-- contoh penggunaan box-sizing agar tidak menambahkan ukuran elemen -->
+    <div class="kasus6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+
+    <!-- contoh penggunaan box-sizing agar tidak menambahkan ukuran elemen -->
+    <div class="kasus7">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis inventore deserunt perspiciatis
+        amet impedit qui assumenda! Ratione ullam, repellat officiis autem, fugiat earum cupiditate laborum doloribus
+        dicta animi repudiandae!
+    </div>
+</body>
+
+</html>

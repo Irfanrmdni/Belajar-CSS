@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        background-color: rgb(52, 169, 247);
+    }
+    
+    .container h1 {
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    .container p {
+        font-size: 0.8rem;
+        color: white;
+        text-align: left;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        background-color: rgb(247, 195, 52);
+    }
+    
+    .container h1 {
+        font-size: 1.4rem;
+        color: white;
+    }
+    
+    .container p {
+        font-size: 1rem;
+        color: white;
+        text-align: right;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .container {
+        background-color: rgb(247, 52, 101);
+    }
+    
+    .container h1 {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .container p {
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        background-color: rgb(185, 52, 247);
+    }
+    
+    .container h1 {
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .container p {
+        font-size: 1rem;
+        color: white;
+        text-align: justify;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        height: 100vh;
+        background-color: #ddd;
+    }
+    
+    .container h1 {
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+    }
+    
+    .container p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- ?CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- ?JS -->
+    <script src="js/script.js" defer></script>
+    <!-- ?fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="login">
+        <div class="logo">
+            <img src="asset/skilline-logo.svg" alt="">
+        </div>
+
+        <div class="caption">
+            <div class="judul">
+                <p>Welcome back</p>
+                <h1>Login to your account</h1>
+            </div>
+
+            <form class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <div class="check">
+                    <div class="check-input">
+                        <input type="radio" name="check" id="check">
+                        <label for="check">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+
+            <div class="button">
+                <button type="submit" class="btnlogin">Login</button>
+                <button type="submit" class="btnsignup">
+                    <i class="fab fa-google"></i> Or sign-in with google
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

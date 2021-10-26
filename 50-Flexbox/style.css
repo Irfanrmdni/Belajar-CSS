@@ -1,0 +1,201 @@
+
+/* sebelum menggunakan flexbox */
+/* .container {
+    width: 600px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container div {
+    width: 130px;
+    height: 130px;
+    background-color: lightblue;
+    float: left;
+    margin: 5px;
+    box-sizing: border-box;
+} */
+
+/* menggunakan flexbox */
+h1 {
+    text-align: center;
+}
+
+/* contoh 1 flex-direction */
+.container {
+    width: 600px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: lightblue;
+}
+
+/* contoh 2 flex-wrap */
+.container2 {
+    width: 600px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: rebeccapurple;
+}
+
+/* contoh 3 justify-content */
+.container3 {
+    width: 600px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3 div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: lawngreen;
+}
+
+/* contoh 4 align-items */
+.container4 {
+    width: 600px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container4 div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: peru;
+}
+
+/* contoh 5 align-content */
+.container5 {
+    width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container5 div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: hotpink;
+}
+
+/* contoh 6 order */
+.container6 {
+    width: 600px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+}
+
+.container6 div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    line-height: 130px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+
+.container6 .satu { order: 3;}
+.container6 .dua { order: 1;}
+.container6 .tiga { order: 4;}
+.container6 .empat { order: 2;}
+
+/* contoh 7 flex-grow */
+.container7 {
+    width: 600px;
+    height: 200px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+}
+
+.container7 div {
+    /* width: 130px;
+    height: 130px; */
+    margin: 2px;
+    background-color: rgb(238, 120, 42);
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    flex-grow: 1;
+}
+
+.container7 div.empat {
+    flex-grow: 2;
+}
+
+/* contoh 8 align-self */
+.container8 {
+    width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    display: flex;
+}
+
+.container8 div {
+    width: 130px;
+    height: 130px;
+    margin: 2px;
+    background-color: rgb(238, 65, 42);
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+
+.container8 div.tiga ,
+.container8 div.satu {
+    align-self: center;
+}

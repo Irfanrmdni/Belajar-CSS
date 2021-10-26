@@ -1,0 +1,24 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main .main-heading {
+  font-size: 2rem;
+  color: rebeccapurple;
+}
+
+.main .main-paragraf {
+  font-size: 1.5rem;
+  color: royalblue;
+}
+
+.footer .footer-heading {
+  font-size: 2rem;
+  color: rebeccapurple;
+}
+
+.footer .footer-paragraf {
+  font-size: 1.5rem;
+  color: royalblue;
+}
+/*# sourceMappingURL=main.css.map */

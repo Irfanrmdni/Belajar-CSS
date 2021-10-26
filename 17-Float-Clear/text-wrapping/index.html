@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 Float contoh 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        cara membersihkan float :
+        1. menggunakan property overflow
+        2. menggunakan <div> kosong diakhir float nya dengan menggunakan property clear
+        3. menggunakan teknik micro clearfix
+        
+        clear berfungsi untuk menghentikan / membersihkan float
+        value nya :
+        1. left
+        2. right
+        3. both
+
+    -->
+
+    <!-- contoh menggunakan <div> kosong dan didalam nya menggunakan property clear -->
+    <div class="container">
+        <img src="mockup2.jpg" alt="logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae omnis, corporis reprehenderit explicabo
+            similique nemo libero repellat impedit, consequatur a quia adipisci sit tempora eum ex possimus at nobis.
+            Dolores non atque dolorum quaerat minima adipisci quasi velit quia inventore sed error voluptas ipsam
+            exercitationem repellat iusto expedita architecto, fugiat praesentium? Dolore rerum</p>
+        <div class="clear"></div>
+    </div>
+
+    <!-- contoh menggunakan overflow -->
+    <div class="container2">
+        <img src="mockup2.jpg" alt="logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae omnis, corporis reprehenderit explicabo
+            similique nemo libero repellat impedit, consequatur a quia adipisci sit tempora eum ex possimus at nobis.
+            Dolores non atque dolorum quaerat minima adipisci quasi velit quia inventore sed error voluptas ipsam
+            exercitationem repellat iusto expedita architecto, fugiat praesentium? Dolore rerum</p>
+    </div>
+</body>
+
+</html>

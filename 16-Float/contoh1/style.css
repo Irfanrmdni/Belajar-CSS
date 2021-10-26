@@ -1,0 +1,74 @@
+/* kasus 1 */
+
+.satu {
+    background-color: salmon;
+    width: 100px;
+    height: 100px;
+}
+
+.dua {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+}
+
+.tiga {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}
+/* ini disebut out-of flow 
+    kotak tiga akan berada di belakang kotak dua
+    kotak tiga akan menganggap bahwa kotak dua tidak ada
+    karna kotak dua sudah keluar dari normal flow
+*/
+
+/* kasus 2 */
+.empat {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.lima {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.enam {
+    background-color: sienna;
+    width: 100px;
+    height: 100px;
+    
+}
+
+/* kasus 3 */
+.container {
+    width: 600px;
+    border: solid 1px black;
+    margin: 40px auto;
+    padding: 5px;
+}
+
+.tujuh, .delapan, .sembilan {
+    width: 100px;
+    height: 100px;
+}
+
+.tujuh {
+    background-color: cadetblue;
+}
+
+.delapan {
+    background-color: crimson;
+    float: right;
+}
+
+.sembilan {
+    background-color: darkmagenta;
+}

@@ -1,0 +1,176 @@
+/* ?font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ?variabel */
+:root {
+    /* !color */
+    --main-color: #2F327D;
+    --second-color: #F48C06;
+    --textmain-color: #696984;
+    --textsecond-color: #292B2C;
+}
+
+/* ?scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(235, 235, 235);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #696984;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2F327D;
+}
+
+/* !reset */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+}
+
+/* ?style */
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* ?Login form */
+.login {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.login .logo {
+    width: inherit;
+    height: inherit;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .logo img {
+    transform: scale(1.6);
+}
+
+.login .caption {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+}
+
+.login .judul {
+    width: 100%;
+    text-align: center;
+}
+
+.login .judul h1 {
+    font-size: 30px;
+    color: var(--textsecond-color);
+}
+
+.login .judul p {
+    font-size: 16px;
+    color: var(--textsecond-color);
+}
+
+.login .caption .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px auto;
+}
+
+.login .form input {
+    width: inherit;
+    border: solid 1px var(--textsecond-color);
+    border-radius: 5px;
+    padding: 0.7rem 0.8rem;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.login .form label {
+    font-size: 1rem;
+    color: var(--textsecond-color);
+}
+
+.login .form .check {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login .form .check label {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.login .form .check a {
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.login .button {
+    width: 100%;
+
+}
+
+.login .button button {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out;
+}
+
+.login .button button:hover {
+    opacity: .8;
+}
+
+.login .button .btnlogin {
+    background-color: #04C35C;
+    margin-bottom: 1rem;
+}
+
+.login .button .btnsignup {
+    background-color: var(--main-color);
+}
+
+.login .button .btnsignup i {
+    margin-right: 10px;
+}

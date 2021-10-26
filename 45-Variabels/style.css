@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+/* membuat variabel */
+:root {
+  --textJudul: rgb(23, 132, 204);
+  --bgContainer: lightblue;
+  --bgBody: white;
+  --textParagraf: #333;
+  --box-padding: 0;
+  --colorControl: #ff8c69;
+}
+
+html[data-color-mode="dark"] {
+  --textJudul: rgb(23, 132, 204);
+  --bgContainer: rgb(99, 99, 99);
+  --bgBody: #333;
+  --textParagraf: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: var(--bgBody);
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: var(--bgContainer);
+  padding: 2em;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.6em;
+  line-height: 1;
+  color: var(--textJudul);
+}
+
+h1 span {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 0;
+  color: var(--textParagraf);
+}
+
+p {
+  color: var(--textParagraf);
+}
+
+/* button */
+button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 8px 15px;
+  background-color: rgb(45, 218, 45);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* box */
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: var(--colorControl);
+  margin: auto;
+  padding: var(--box-padding);
+}

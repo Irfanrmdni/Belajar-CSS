@@ -1,0 +1,23 @@
+h1 {
+    font-size: 70px;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+
+h2 {
+    font-size: 70px;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+
+h3 {
+    font-size: 70px;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 3px 3px 5px rgba(255,0,0,.5) , -3px -3px 5px rgba(0,0,255,.5);
+}

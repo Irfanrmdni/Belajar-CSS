@@ -1,0 +1,128 @@
+
+/* margin contoh kasus 1 */
+.kotak1 {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    background-color: aquamarine;
+}
+.kotak2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: greenyellow;
+}
+.kotak3 {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: salmon;
+}
+
+/* margin contoh kasus 2 */
+.kasus2 div {
+    display: inline-block;
+}
+.kotak4 {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+}
+.kotak5 {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+.kotak6 {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+}
+
+/* margin contoh kasus 3 */
+.kasus3 div {
+    display: inline-block;
+}
+.kotak7 {
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    background-color: aquamarine;
+}
+.kotak8 {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    background-color: greenyellow;
+}
+.kotak9 {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+}
+/* contoh kasus 4 menggunakan value minus */
+.kotak10 {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: aquamarine;
+}
+.kotak11 {
+    width: 100px;
+    height: 100px;
+    margin-top: -100px;
+    background-color: greenyellow;
+}
+.kotak12 {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+}
+
+/* contoh kasus 5 */
+.kotak13 {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+}
+.kotak14 {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: greenyellow;
+}
+.kotak15 {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: salmon;
+}
+
+/* contoh kasus 6 */
+.kotak16 {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: aquamarine;
+}
+.kotak17 {
+    width: 100px;
+    height: 100px;
+    margin: 200px 0 50px 100px;
+    background-color: greenyellow;
+}
+.kotak18 {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: salmon;
+}

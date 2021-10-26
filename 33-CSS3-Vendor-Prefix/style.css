@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+/* menggunakan -webkit- */
+/* img {
+    width: 30%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    display: block;
+    margin: 20px auto;
+} */
+
+/* dengan menggunakan bantuan dari web http://pleeease.iamvdo.me/ */
+img {
+    width: 30%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    display: block;
+    margin: 20px auto;
+}

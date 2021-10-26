@@ -1,0 +1,61 @@
+.heading-satu,
+.heading-dua,
+.heading-tiga,
+.heading-empat,
+.heading-lima,
+.heading-enam,
+.heading-tujuh,
+.heading-delapan,
+.heading-sembilan,
+.heading-sepuluh,
+.heading-sebelas {
+  color: salmon;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.heading-satu {
+  color: #c8e4d6;
+}
+
+.heading-dua {
+  color: #fac472;
+}
+
+.heading-tiga {
+  color: #72ecfa;
+}
+
+.heading-empat {
+  color: #f7270f;
+}
+
+.heading-lima {
+  color: #fcaca3;
+}
+
+.heading-enam {
+  color: #ff7c6d;
+}
+
+.heading-tujuh {
+  color: #d69d97;
+}
+
+.heading-delapan {
+  color: #b6b6b6;
+}
+
+.heading-sembilan {
+  color: #af5a9c;
+}
+
+.heading-sepuluh {
+  color: rgba(250, 128, 114, 0.6);
+}
+
+.heading-sebelas {
+  color: rgba(250, 128, 114, 0.5);
+}
+/*# sourceMappingURL=main.css.map */

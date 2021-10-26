@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 special keyowrds & functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        special keyowrds & functions
+        1. repeat ()                    : untuk menentukan ukuran grid track secara berulang
+        sintaks : grid-template-columns: repeat(9, 1fr); = membuat 9 column dengan ukuran 1fr
+
+        2. min-content & max-content    : menentukan seberapa besar ukuran grid track berdasarkan content
+        pada sebuah item.
+        sintaks : grid-template-columns: min-content; | max-content;
+
+        perbedaan nya :
+        - kalo min-content : tulisan/isi konten nya akan dipecah menjadi tiap-tiap kata
+        dan kata nya akan dicari mana yang paling panjang itu yang akan dipilih
+
+        - kalo max-content : tulisan/isi konten nya akan tetap mengikuti dari tulisan/isi konten nya
+
+        3. auto-fill & auto-fit         : menentukan jumlah item untuk berada pada grid track
+        sintaks : grid-template-columns: repeat(ato-fit, 150px);
+
+        - biasanya digunakan didalam repeat
+        - cocok ketika ingin membuat item menjadi responsive
+
+        perbedaan nya : 
+        - auto-fit    : ketika elemen item nya lebih sedikit dari lebar container nya.
+        jadi secara explicit grid nya berada di elemen terakhir.
+
+        - auto-fill   : ketika elemen item nya lebih sedikit dari lebar container nya.
+        jadi dia akan cek jika ada tempat kosong di akhir item. maka grid nya akan menentukan akhir dari grid nya disitu 
+
+        4. minmax ()                    : menentukan ukuran minimal dan maximal dari grid-track 
+        sintaks : grid-template-columns: minmax(200px, 300px);
+
+        jadi ketika ukuran nya diperkecil maka ukuran halaman minimal nya akan 200px.
+        ketika ukuran nya di perbesar maka ukuran halaman maximal nya akan 300px
+    -->
+
+    <!-- menggunakan repeat -->
+    <div class="container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- menggunakan min-content -->
+    <div class="container-dua">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">ini adalah min-content</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- menggunakan max-content -->
+    <div class="container-tiga">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">ini adalah max-content. ini adalah max-content</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- perbedaan auto-fit -->
+    <div class="container-empat">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <!-- <div class="grid-item">4</div> -->
+        <!-- <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> -->
+    </div>
+
+    <!-- perbedaan auto-fill -->
+    <div class="container-lima">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <!-- <div class="grid-item">4</div> -->
+        <!-- <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> -->
+    </div>
+
+    <!-- menggunakan auto-fit & auto-fill -->
+    <div class="container-enam">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- menggunakan minmax -->
+    <div class="container-tujuh">
+        <div class="grid-item">irfan ajah</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">jlcijeroksaono60</div>
+        <!-- <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> -->
+    </div>
+</body>
+
+</html>

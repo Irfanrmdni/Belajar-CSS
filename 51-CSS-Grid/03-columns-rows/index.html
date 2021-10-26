@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 column & rows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        Grid colmns and rows :
+
+        Property yang ada di container :
+        1.  grid-template-columns
+        2.  grid-template-rows
+        3.  grid-auto-columns
+        4.  grid-auto-rows
+        5.  grid-auto-flow
+        6.  grid-template-area
+        7.  grid-template
+        8.  grid-column-gap
+        9.  grid-row-gap
+        10. grid-gap
+        11. grid
+
+        12. justify-items
+        13. align-items
+        14. place-items
+        15. justify-content
+        16. align-content
+        17. place-content
+
+        property yang ada di item :
+        1.  grid-column-start
+        2.  grid-column-end
+        3.  grid-row-start
+        4.  grid-row-end
+        5.  grid-column
+        6.  grid-row
+        7.  grid-area
+        8.  justify-self
+        9.  align-self
+        10. place-self
+
+        yang akan dibahas : 
+        1.  grid-template-columns
+        2.  grid-template-rows
+
+        yaitu mendefinisikan kolom / baris dengan cara menuliskan nilai dipisahkan
+        oleh spasi.
+        (nilai) merepresentasikan ukuran (grid track)
+        (spasi) merepresentasikan (grid line).
+
+        sintaks :
+        display: grid;
+        grid-template-columns: <track-size> ... | <line-name> ... <track-size> ...
+        grid-template-rows: <track-size> ... | <line-name> ... <track-size> ...
+
+        <track-size> ... bisa berupa px / % / auto / fr (fraction)
+        <line-name> ... nama yang diberikan pada track
+
+        fr (fraction) : 1fr = 1 bagian , 2fr = 2 bagian
+
+        explicit grid & implicit grid :
+        1. explicit : ketika kita secara jelas menuliskan ukuran dari grid nya (kolom & baris)
+        2. implicit : ketika grid nya menentukan secara otomatis sisanya dari (kolom & baris)
+        yang tidak kita tentukan secara explicit. jadi otomatis ditentukan oleh grid nya
+    
+        cara agar bisa mengatur implicit adalah dengan grid-auto-columns & grid-auto-rows
+    
+        1. grid-auto-columns
+        2. grid-auto-rows
+
+        yaitu mengatur ukuran grid track yang tidak dituliskan pada grid-template (implicit) 
+    
+        cara membuat column yang implicit dengan grid-auto-flow :
+        grid-auto-flow : mengatur penempatan item / cell pada grid track termasuk 
+        yang ditulis secara implicit. ini sama seperti flex-direction
+
+        value nya : row | column | row dense | column dense (default nya row)
+    -->
+
+    <!-- membuat grid-template-columns & grid-template-rows -->
+    <div class="container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- explicit & implicit grid -->
+    <div class="container-dua">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- mengatasi implicit dengan grid-auto-columns & grid-auto-rows -->
+    <div class="container-tiga">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- membuat grid jadi implicit dengan grid-auto-flow -->
+    <div class="container-empat">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- contoh menggunakan <line-name> -->
+    <div class="container-lima">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- contoh menggunakan fr (fraction) -->
+    <div class="container-enam">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+
+</html>

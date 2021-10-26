@@ -1,0 +1,9 @@
+body {
+    font-family: poppins,sans-serif;
+    color: darkgreen;
+}
+
+/* elemen tag a tidak akan berubah color nya maka kita gunakan inherit */
+a {
+    color: inherit;
+}

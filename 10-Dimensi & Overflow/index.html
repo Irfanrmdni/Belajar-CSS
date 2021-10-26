@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Dimensi & Overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        Dimensi dan Overflow
+
+        Dimensi memiliki properti :
+        1. width
+        2. max-width
+        3. min-width
+        4. height
+        5. max-height
+        6. min-height
+
+        satuan nya yaitu ada :
+        1. px (absolute / pasti)
+        2. % (relative terhadap parent nya)
+
+        overflow digunakan untuk mengatur perilaku elemen HTML yang keluar dari parent nya
+        atau jika content yang ada dalam parent nya tidak cukup
+
+        value nya ada 4 :
+        1. visible (default)
+        2. auto     = menambahkan scroll pada content. jika content nya tidak cukup
+        3. hidden   = menyembunyikan content
+        4. scroll   = menambahkan scroll pada content. tetapi jika content nya cukup 
+        maka ini tetap ada
+    -->
+
+    <div class="p1">
+        <p>Hello World.</p>
+    </div>
+
+    <div class="p2">
+        <p>Hello World.</p>
+    </div>
+
+    <div class="ibu">
+        ini parent nya
+        <div class="anak">
+            ini anak nya
+        </div>
+    </div>
+
+    <p class="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minus repudiandae necessitatibus corporis ipsa
+        ipsum quasi culpa officia soluta, esse, praesentium in quod sapiente minima qui? Eveniet asperiores laborum
+        beatae!
+    </p>
+
+    <p class="p4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minus repudiandae necessitatibus corporis ipsa
+        ipsum quasi culpa officia soluta, esse, praesentium in quod sapiente minima qui? Eveniet asperiores laborum
+        beatae!
+    </p>
+
+    <div class="p5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores assumenda ipsam amet provident nam
+        tenetur dolor officiis aut dolore nobis cupiditate doloribus suscipit esse id impedit inventore, cum harum
+        aperiam rem a? Neque velit aut error dolorum adipisci voluptatem, recusandae accusamus eaque assumenda aliquam
+        libero praesentium natus commodi repellendus animi reprehenderit, aspernatur maiores facilis vitae. Quae libero
+        minima illo illum deleniti molestiae voluptatem hic unde quaerat assumenda corporis dolores distinctio, delectus
+        aliquam possimus ea magni a, saepe harum, nam rem dolor. Ut ducimus soluta facere consequatur culpa expedita
+        nesciunt accusamus perspiciatis in earum, vel consequuntur quam voluptates, rerum recusandae?
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+h1{
+    font-family: poppins, sans-serif;
+}
+
+h2{
+    font-size: 32px;
+}
+h3{
+    font-style: italic;
+}
+h4{
+    font-variant: small-caps;
+}
+h5{
+    font-weight: lighter;
+}
+h6{
+    line-height: 40px;
+}
+
+p{
+    font: normal normal bold 24px/10px poppins, sans-serif;
+}

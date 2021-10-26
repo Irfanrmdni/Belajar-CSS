@@ -1,0 +1,21 @@
+p {
+    width: 600px;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+.p1 {
+    user-select: none;
+}
+.p2 {
+    user-select: auto;
+}
+.p3 {
+    user-select: text;
+}
+.p4 {
+    user-select: all;
+}
+.p5 {
+    user-select: contain;
+}

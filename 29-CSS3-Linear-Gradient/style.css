@@ -1,0 +1,49 @@
+
+/* gradasi 2 warna */
+.kotak {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(rgb(135, 179, 245),rgb(13, 104, 139));
+}
+
+/* gradasi 3 warna */
+.kotak2 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: linear-gradient(rgb(235, 171, 248),rgb(235, 39, 147),rgb(74, 13, 187));
+}
+
+/* gradasi dengan mengatur sudut */
+.kotak3 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: linear-gradient(45deg,rgb(216, 18, 68),rgb(37, 119, 241));
+}
+
+/* gradasi dengan mengatur arah */
+.kotak4 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: linear-gradient(to bottom right,rgb(216, 213, 18),rgb(37, 119, 241));
+}
+
+/* gradasi dengan color stop */
+.kotak5 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: linear-gradient(rgb(189, 140, 8) 70% ,rgb(241, 212, 113) );
+}
+
+/* menggunakan gradient generator */
+.kotak6 {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background: rgb(12,48,144);
+    background: linear-gradient(45deg, rgba(12,48,144,1) 0%, rgba(219,34,175,1) 53%, rgba(148,34,236,1) 100%);
+}

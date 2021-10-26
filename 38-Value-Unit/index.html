@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38 CSS Value dan Unit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        value dan unit : nilai satuan yan bisa diberikan pada css
+
+        contoh :
+        .selector {
+            width: 100%;
+            height: 500px;
+        }
+        nilai 100 dan 500 itu adalah value dan % / px adalah unit
+
+        css value :
+        1. integer      : nilai angka biasa / bilangan bulat (100 , -100 , -25)
+        2. number       : nilai angka pecahan (o.8 , 0.5 , .5 , .7)
+        3. percentage   : merepresentasikan sebagian dari nilai tertentu. 
+        % selalu relative terhadap nilai lain (100% , 50% , 10%)
+        4. dimension    : number yang memiliki satuan dibelakang nya
+        memiliki kategori : length , angle , time , resolution
+
+        <length> dibagi jadi 2 : absolute (nilai nya pasti) dan relative (nilai nya relative terhadap parent)
+        absolute nilai nya : px , pt , pc , cm , mm , in
+        relative nilai nya : % , em , rem , ch , vh , vw , vmin , vmax
+        %   : ukuran relative terhadap ukuran parent
+        em  : relative terhadap ukuran font yang sedang digunakan
+        rem : relative terhadap ukuran font "root" / <html>
+        ch  : relative terhadap lebar dari karakter 0 dari font yg digunakan
+        vh  : relative terhadap tinggi viewport
+        vw  : relative terhadap lebar viewport
+        vmin: relative terhadap dimensi terkecil sebuah viewport
+        vmax: relative terhadap dimensi terbesar sebuah viewport
+
+        em dan rem bisa juga untuk mengatur elemen html selain font
+
+        viewport adalah ukuran layar yang kita lihat 
+
+        <angle> atau rotasi satuan nya : deg , rad , grad , turn
+
+        <time> atau waktu satuan nya : s / ms
+
+        <resolution> biasanya digunakan untuk mencetak halaman / print satuan nya : dpi , dpcm , dppx
+    -->
+
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+    <div class="kotak3"></div>
+
+    <!-- length absolute -->
+    <p class="satu">satuan px</p>
+    <p class="dua">satuan pt.</p>
+    <p class="tiga">satuan pc.</p>
+    <p class="empat">satuan cm.</p>
+    <p class="lima">satuan mm.</p>
+    <p class="enam">satuan in.</p>
+
+    <!-- length relative em -->
+    <div class="box">
+        <h1>menggunakan em</h1>
+        <p>Welcome to my website</p>
+    </div>
+
+    <!-- length relative rem -->
+    <div class="box2">
+        <h1>menggunakan rem</h1>
+        <p>Welcome to my website</p>
+    </div>
+
+    <!-- length relative ch / character -->
+    <div class="box3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis magni temporibus sequi labore,
+            exercitationem veniam architecto sed excepturi soluta, atque vitae minus commodi, quaerat at accusamus.
+            Temporibus nesciunt, nihil laboriosam sint illo consequatur, fugit culpa explicabo laborum obcaecati nostrum
+            magni dolor, aspernatur eius aliquid quidem optio debitis iusto. Tempore blanditiis id tempora optio
+            deserunt saepe itaque iusto? Pariatur, sed dolorum, similique quidem velit delectus dolorem alias culpa,
+            deserunt aperiam voluptatem enim neque nesciunt beatae. Eum, modi. Adipisci, a repellendus sapiente quae,
+            officiis est vero vel earum quibusdam cupiditate laboriosam porro ipsum odit dolorem dolore repudiandae fuga
+            perspiciatis beatae, incidunt at aspernatur vitae cumque doloremque. Dignissimos officia, qui, natus
+            expedita veritatis facilis sed quo harum, unde dolorum ipsum eius sit rem. Error quas, suscipit obcaecati
+            commodi ratione aliquid, dolor optio laborum consequatur esse culpa fuga tempora fugit facilis illo
+            inventore dolorum sit vero qui labore. Et, aspernatur veritatis. Dolore atque asperiores cum tenetur! Beatae
+            qui nihil odit. Rem, consectetur? Nesciunt numquam provident minus quaerat inventore! Ducimus veritatis sit
+            fuga eaque eligendi beatae nihil harum qui architecto! Possimus tenetur inventore, molestiae ut consequatur
+            at perferendis, sed qui repellendus cupiditate adipisci fugiat repudiandae quibusdam magni officiis nobis
+            voluptate officia sunt sit consequuntur! Praesentium.</p>
+    </div>
+
+    <!-- length relative vw dan vh -->
+    <div class="box4"></div>
+    <p>hello world</p>
+
+    <!-- length relative vmin -->
+    <div class="box5"></div>
+    <p>hello world</p>
+
+    <!-- length relative vmax -->
+    <div class="box6"></div>
+    <p>hello world</p>
+</body>
+
+</html>

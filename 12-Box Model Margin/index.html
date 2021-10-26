@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-Box model margin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        css box model terdiri dari 4 komponen
+        1. margin   = area transparan disekitar kotak (diluar kotak)
+        2. border   = batas disekeliling margin dan padding
+        3. padding  = area transparan didalam kotak (antara content dan border)
+        4, content  = konten sebenarnya didalam box 
+
+        ketika menggunakan margin maka elemen yang dibawah nya akan ikut terbawa
+
+        overlapping margin : 
+        - ini terjadi ketika menggabungkan 2 buah margin
+        - untuk elemen vertikal margin tidak saling menambahkan
+        - untuk elemen horizontal margin akan saling menambahkan
+
+        contohnya ketika .kotak 1 diberi margin-bottom 100px dan .kotak2 diberi margin-top 50px
+        maka ini tidak akan terjadi perubahan (karna yang diambil itu yang paling besar)
+    
+        margin shorthand :
+        1. 2 value -> margin: 50px 100px; = atas bawah 50px , kiri kanan 100px
+        2. 1 value -> margin: 100px; atas, bawah, kiri, kanan 100px
+        3. 3 value -> margin: 20px 90px 100px; atas 20px, kiri kanan 90px, bawah 100px
+        4. 4 value -> margin: 10px 20px 30px 40px; atas 10px, kanan 20px, bawah 30px kiri 40px
+    -->
+
+    <!-- 1. contoh kasus overlapping margin -->
+    <div class="kotak1">
+        kotak 1
+    </div>
+
+    <div class="kotak2">
+        kotak 2
+    </div>
+
+    <div class="kotak3">
+        kotak 3
+    </div>
+
+    <!-- 2. contoh kasus ketika menggunakan inline-block jadi ada jarak di tiap elemen
+        padahal kita tidak memberi margin sama sekali
+    -->
+    <div class="kasus2">
+        <!-- <div class="kotak4">
+            kotak 4
+        </div>
+
+        <div class="kotak5">
+            kotak 5
+        </div>
+
+        <div class="kotak6">
+            kotak 6
+        </div> -->
+
+        <!-- cara mengatasinya dengan tidak memberi enter atau menempelkan semua div nya -->
+        <div class="kotak4">
+            kotak 4
+        </div><div class="kotak5">kotak 5</div><div class="kotak6">kotak 6</div>
+    </div>
+
+     <!-- 3. contoh kasus 3 overlapping margin horizontal -->
+     <div class="kasus3">
+        <div class="kotak7">
+            kotak 7
+        </div>
+        <div class="kotak8">
+            kotak 8
+        </div>
+        <div class="kotak9">
+            kotak 9
+        </div>
+    </div>
+
+    <!-- contoh kasus 4 menggunakan value minus margin -->
+    <div class="kotak10">
+        kotak 10
+    </div>
+    <div class="kotak11">
+        kotak 11
+    </div>
+    <div class="kotak12">
+        kotak 12
+    </div>
+
+    <!-- contoh kasus 5 menggunakan margin auto
+        ini akan membuat elemen menjadi di tengah dari parent nya
+    -->
+    <div class="kotak13">
+        kotak 13
+    </div>
+    <div class="kotak14">
+        kotak 14
+    </div>
+    <div class="kotak15">
+        kotak 15
+    </div>
+
+    <!-- contoh kasus 6 menggunakan shorthand margin -->
+    <div class="kotak16">
+        kotak 16
+    </div>
+    <div class="kotak17">
+        kotak 17
+    </div>
+    <div class="kotak18">
+        kotak 18
+    </div>
+</body>
+</html>

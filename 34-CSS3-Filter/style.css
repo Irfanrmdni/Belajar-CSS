@@ -1,0 +1,59 @@
+img {
+    width: 30%;
+    margin: 20px;
+}
+
+/* contoh blur */
+img.gambar {
+    filter: blur(10px);
+}
+
+/* contoh brightness */
+img.gambar1 {
+    filter: brightness(45%);
+}
+
+/* contoh contrast */
+img.gambar2 {
+    filter: contrast(25%);
+}
+
+/* contoh saturate */
+img.gambar3 {
+    filter: saturate(45%);
+}
+
+/* contoh grayscale */
+img.gambar4 {
+    filter: grayscale(100%);
+}
+
+/* contoh sepia */
+img.gambar5 {
+    filter: sepia(90%);
+}
+
+/* contoh hue-rotate */
+img.gambar6 {
+    filter: hue-rotate(90deg);
+}
+
+/* contoh invert */
+img.gambar7 {
+    filter: invert(40%);
+}
+
+/* contoh opacity */
+img.gambar8 {
+    filter: opacity(30%);
+}
+
+/* contoh drop-shadow */
+img.gambar9 {
+    filter: drop-shadow(7px 7px 10px rgba(0,0,0,.5));
+}
+
+/* contoh menggunakan filter lebih dari 1 */
+img.gambar10 {
+    -webkit-filter: blur(3px) brightness(1.1) contrast(2.7) drop-shadow(14px 14px 20px black) grayscale(0.8) hue-rotate(90deg) saturate(2.8) sepia(0.4);    
+}

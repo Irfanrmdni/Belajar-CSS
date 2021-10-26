@@ -1,0 +1,143 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-align: center;
+    background-color: #eee;
+    line-height: 1.6;
+    font-weight: 300;
+    min-height: 2000px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.typography {
+    display: flex;
+}
+
+.typography .col {
+    flex: 1;
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}
+
+/* em */
+
+/* 
+jika kita memberi ukuran font-size pada parent maka
+elemen h2 dan p akan relative mengikuti terhadap ukuran parent nya
+
+yang h2 jadi 20px dan p jadi 15px
+*/
+
+/* .col-em {
+    font-size: 10px;
+}
+
+.col-em h2 {
+    font-size: 2em; 
+}
+.col-em p {
+    font-size: 1.5em; 
+} */
+
+
+/* 
+jika terdapat tumpukan em dari beberapa parent maka
+yang terjadi nilai nya akan menumpuk
+
+parent .typography ukuran nya 10px
+parent .col-em ukuran nya 2x dari parent .typography jadi 20px
+h2 ukuran nya jadi 2x dari parent .col-em jadi 40px
+p ukuran nya jadi 1.5 dari parent .col-em jadi 30px
+*/
+/* .typography {
+    font-size: 10px;
+}
+
+.col-em {
+    font-size: 2em;
+}
+
+.col-em h2{
+    font-size: 2em;
+}
+
+.col-em p{
+    font-size: 1.5em;
+} */
+
+/* 
+cara mengatasi dari tumpukan em itu adalah dengan menggunakan rem
+*/
+
+/* rem */
+
+/* 
+ini akan mengabaikan ukuran dari font-size parent
+jadi ukuran nya tetap dari default nya (16px)
+*/
+/* .col-rem {
+    font-size: 10px;
+}
+
+.col-rem h2{
+    font-size: 2rem;
+}
+
+.col-rem p{
+    font-size: 1.5rem;
+} */
+
+/* 
+jadi cara mengatasi nya dengan membuat ukuran font-size di elemen html/root
+
+jadi yang parent .col-rem akan diabaikan
+*/
+
+/* html {
+    font-size: 10px;
+}
+.col-rem {
+    font-size: 10px;
+}
+
+.col-rem h2{
+    font-size: 2rem;
+}
+
+.col-rem p{
+    font-size: 1.5rem;
+} */
+
+/* menggunakan em untuk elemen length */
+.btn {
+    display: inline-block;
+    background-color: #333;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+/* ukuran nya jadi 16px dan 48px
+(karena tidak ada ukuran font-size pada parent */
+    padding: 1em 3em;
+
+/* 
+untuk membuat margin agar sama atau fix di semua btn maka gunakan rem 
+jadi supaya tidak mengikuti dari ukuran parent em
+
+jika kita gunakan em maka yang terjadi margin nya akan berbeda-beda ukuran nya
+*/
+margin: 0 1.5rem;
+}
+
+.btn-sm {
+    font-size: 0.5em;
+}
+
+.btn-lg {
+    font-size: 2em;
+}

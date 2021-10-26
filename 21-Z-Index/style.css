@@ -1,0 +1,40 @@
+body {
+    height: 2000px;
+}
+
+/* mengatur tumpukan dengan z-index */
+.satu,
+.dua,
+.tiga {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.satu {
+    background-color: seagreen;
+}
+
+.dua {
+    background-color: rebeccapurple;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+.tiga {
+    background-color: darkorange;
+    top: 200px;
+    left: 200px;
+}
+
+/* contoh menggunakan position fixed */
+.topbar {
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: fixed;
+    background-color: blue;
+}

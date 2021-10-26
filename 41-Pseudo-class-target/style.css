@@ -1,0 +1,24 @@
+/* 
+maksudnya elemen apapun yang id nya ditarget melalui URL
+maka css nya akan aktif
+*/
+/* :target {
+    background-color: salmon;
+} */
+
+/* kita akan mengubah elemen dengan warna yang berbeda */
+#judul:target {
+    background-color: rebeccapurple;
+}
+
+#p1:target {
+    background-color: cadetblue;
+}
+
+#p2:target {
+    background-color: palevioletred;
+}
+
+#p3:target {
+    background-color: crimson;
+}

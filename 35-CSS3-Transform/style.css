@@ -1,0 +1,69 @@
+/* menggunakan scale */
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    margin: 50px auto;
+    transition: transform .4s ease-in-out;
+}
+.kotak:hover {
+    /* transform: scale(1.2); */
+    transform: scaleY(1.2);
+}
+
+/* menggunakan rotate */
+.kotak2 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    margin: 50px auto;
+    transition: transform .4s ease-in-out;
+}
+.kotak2:hover {
+    /* transform: rotate(45deg); */
+    transform:  rotateX(45deg);
+}
+
+/* menggunakan skew */
+.kotak3 {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    margin: 50px auto;
+    transition: transform .4s ease-in-out;
+}
+.kotak3:hover {
+    /* transform:  skew(-15deg); */
+    transform:  skewY(-15deg);
+}
+
+/* menggunakan translate */
+.kotak4 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    margin: 50px auto;
+    transition: transform .4s ease-in-out;
+}
+.kotak4:hover {
+    /* transform:  translate(-45px); */
+    /* transform: translateY(30px); */
+    transform: translate(20px , 20px);
+}
+
+/* menggunakan properti transform lebih dari 1 */
+.kotak5 {
+    width: 200px;
+    height: 200px;
+    background-color: sienna;
+    margin: 50px auto;
+    transition: transform .4s ease-in-out;
+}
+.kotak5:hover {
+    transform: scale(1.2) rotate(90deg);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}

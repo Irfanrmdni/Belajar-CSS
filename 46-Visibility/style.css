@@ -1,0 +1,10 @@
+.kotak {
+    width: 300px;
+    border: solid 2px black;
+    margin: 30px auto;    
+}
+
+.kotak:hover img {
+    /* display: none; */
+    visibility: hidden;
+}

@@ -1,0 +1,60 @@
+.kotak1 {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    margin: 35px auto;
+    border-radius: 20px;
+}
+
+.kotak2 {
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    margin: 35px auto;
+    border-radius: 100px;
+}
+
+/* mengatur pada bagian sisi tertentu */
+.kotak3 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 35px auto;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/* menggunakan shorthand */
+.kotak4 {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 35px auto;
+    border-radius: 0 65px 65px 65px;
+}
+
+/* menggunakan background-image */
+.kotak5 {
+    width: 400px;
+    height: 400px;
+    background-image: url(irfan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 25px auto;
+    border-radius: 200px 200px 200px 0;
+}
+
+/* menggunakan image di elemen html */
+.kotak6 {
+    width: 400px;
+    height: 400px;
+    margin: 25px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 4px red;
+    background-color: slateblue;
+}
+
+.kotak6 img {
+    width: 400px;
+}

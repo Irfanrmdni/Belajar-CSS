@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>45 CSS Variables / Custom Property</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- 
+    css variabel dibuat agar tidak terjadi duplikasi dalam pembuatan style css
+
+    untuk membuat custom properties / nama variabel diawali dengan --namaVariabel
+    lalu untuk menggunakan variabel nya kita gunakan var(--namaVariabel)
+
+    :root yang artinya ini berlaku untuk semua elemen didalam halaman (atau elemen yang paling utama)
+  -->
+
+  <button>Dark Mode</button>
+
+  <div class="container">
+    <h1>
+      CSS Variabel <br>
+      <span>(custom properties)</span>
+    </h1>
+
+    <div class="control">
+      <label for="padding">Padding</label>
+      <input type="range" id="padding" min="0" max="200" value="0">
+
+      <label for="color">Color</label>
+      <input type="color" id="color" value="#ff8c69">
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum natus, repellendus totam repellat iusto sit.
+      Itaque odit laudantium, autem tempore sit commodi placeat, in ea accusamus sed, reprehenderit earum.</p>
+
+    <div class="box"></div>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur inventore, cumque ab reprehenderit
+      quidem officia nisi quaerat neque sint, quisquam vel vero recusandae officiis accusamus consequuntur non quia,
+      saepe
+      delectus veniam ipsam sit! Magni nam exercitationem est eos illum, mollitia impedit nemo velit iste a et enim? Nam
+      nesciunt temporibus dolorum eligendi ratione atque nihil cumque veniam culpa quo?
+    </p>
+  </div>
+
+</body>
+
+</html>

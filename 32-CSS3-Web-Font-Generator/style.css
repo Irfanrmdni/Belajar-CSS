@@ -1,0 +1,25 @@
+/* menggunakan webfont kit */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'open_sansregular';
+}
+
+/* menggunakan webfont generator */
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'kaushan_scriptregular';
+}

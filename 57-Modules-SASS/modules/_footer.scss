@@ -1,0 +1,11 @@
+@use '../mixin';
+
+// ?ini adalah style untuk footer yang dibuat terpisah
+.footer {
+    @include mixin.inline-list();
+
+    ul li a {
+        color: white;
+        background-color: rgb(51, 104, 153);
+    }
+}

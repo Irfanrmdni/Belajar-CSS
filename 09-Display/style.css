@@ -1,0 +1,43 @@
+.header {
+    background-color: hotpink;
+}
+
+.navigasi {
+    background-color: cornflowerblue;
+}
+
+.main {
+    width: 650px;
+    background-color: rebeccapurple;
+}
+
+.copyright {
+    background-color: aqua;
+}
+
+.header span {
+    background-color: chartreuse;
+}
+
+/* mengubah display ke inline-block
+agar bisa mengatur tinggi dan lebar */
+span {
+    width: 200px;
+    height: 150px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.main h2 {
+    background-color: orange;
+}
+
+/* mengubah display ke none */
+.main img:last-of-type {
+    display: none;
+}
+
+/* mengubah display ke inline */
+.ubahDisplay ul li {
+    display: inline;
+}

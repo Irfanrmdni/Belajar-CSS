@@ -1,0 +1,29 @@
+// ?kita akan memasukan mixin dari main.scss ke dalam _mixin.scss
+
+// ?membuat display nya inline-block dan
+// ?margin padding nya 0 dengan menggunakan mixin
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, verdana, sans-serif;
+
+    ul li {
+        display: inline-block;
+    }
+
+    ul li a {
+        padding: 5px 15px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+// ?mixin dengan arguments lebih dari 1
+@mixin flexbox($direction: row, $justify-content: flex-start) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+    flex-direction: $direction;
+}

@@ -1,0 +1,117 @@
+.kotak1 {
+    width: 80%; /* percentage */
+    height: 200px; /* integer */
+    background-color: salmon;
+    margin: 20px auto;
+    opacity: 0.5; /* number */
+}
+
+.kotak2 {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    margin: 60px auto;
+
+    /* dimension angle */
+    /* transform: rotate(30deg); */
+    /* transform: rotate(0.523333333rad); */
+    /* transform: rotate(0.08333333turn); */
+    transform: rotate(33.3grad);
+}
+
+.kotak3 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    margin: 60px auto;
+    transition: all .4s ease-in-out; /* dimension time */
+}
+
+.kotak3:hover {
+    background-color: aqua;
+}
+
+/* contoh menggunakan resolution untuk print */
+@media print and (min-resolution: 300dpi){}
+
+/* contoh menggunakan length nilai absolute */
+p.satu {
+    /* nilai px digunakan khusus untuk screen pc/hp */
+    font-size: 16px;
+}
+p.dua {
+    font-size: 12pt;
+}
+p.tiga {
+    font-size: 1pc;
+}
+p.empat {
+    font-size: 0.43cm;
+}
+p.lima {
+    font-size: 4.3mm;
+}
+p.enam {
+    font-size: 0.17in;
+}
+
+/* contoh menggunakan length nilai relative em */
+.box {
+    text-align: center;
+    font-size: 30px; /* nilai parent */
+} 
+
+.box h1{
+    font-size: 1em; /* sama dengan 30px */
+}
+.box p{
+    font-size: 2em; /* sama dengan 60px */
+}
+
+/* contoh menggunakan length nilai relative rem */
+html {
+    font-size: 50px; /* nilai parent */
+}
+
+.box2 {
+    text-align: center;
+    font-size: 30px; /* ini akan diabaikan */
+} 
+
+.box2 h1{
+    font-size: 1rem; /* sama dengan 50px */
+}
+.box2 p{
+    font-size: 2rem; /* sama dengan 100px */
+}
+
+/* contoh menggunakan length nilai relative ch 
+    biasanya digunakan untuk membatasi jumlah character
+*/
+.box3 {
+    width: 60ch; /* jadi lebar nya 60 character */
+    font-size: 0.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid 1px red;
+}
+
+/* contoh menggunakan length nilai relative vh dan vw */
+.box4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+/* contoh menggunakan length nilai relative vmin */
+.box5 {
+    width: 100vmin;
+    height: 100vmin;
+    background-color: aqua;
+}
+
+/* contoh menggunakan length nilai relative vmax */
+.box6 {
+    width: 100vmax;
+    height: 50vmax;
+    background-color: lightgreen;
+}

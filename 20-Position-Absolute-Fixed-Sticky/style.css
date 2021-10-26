@@ -1,0 +1,73 @@
+body {
+    height: 2000px;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+}
+
+.satu {
+    background-color: aqua;
+}
+
+/* position absolute parent nya body */
+.dua {
+    background-color: salmon;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tiga {
+    background-color: forestgreen;
+}
+
+/* position absolute parent nya container */
+.container {
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    border: solid 5px red;
+    /* kita harus memberi position non static agar
+    parent nya naik 1 dimensi juga dan elemen .lima nya akan
+    berada di posisi elemen parent nya */
+    position: relative;
+}
+
+.empat {
+    background-color: hotpink;
+}
+
+.lima {
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.enam {
+    background-color: yellowgreen;
+}
+
+/* position fixed parent nya akan selalu di body */
+.cobafixed {
+    background-color: crimson;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* position sticky 
+ketika sudah mencapai jarak 100px dari atas halaman maka akan diam
+*/
+.coba-sticky {
+    background-color: lightblue;
+    width: 50%;
+    height: 70px;
+    position: sticky;
+    top: 100px;
+    z-index: 9990;
+}

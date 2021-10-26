@@ -1,0 +1,46 @@
+.cursor {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: salmon;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 200px;
+    font-size: 1.2rem;
+}
+
+.auto{
+    cursor: auto;
+}
+.all-scroll{
+    cursor: all-scroll;
+}
+.wait{
+    cursor: wait;
+}
+.url-custom{
+    cursor: url('cursor/black.ani');
+}
+.sw-resize{
+    cursor: sw-resize;
+    /* cursor: s-resize; */
+    /* cursor: se-resize; */
+}
+.pointer{
+    cursor: pointer;
+}
+.crosshair{
+    cursor: crosshair;
+}
+.move{
+    cursor: move;
+}
+.help{
+    cursor: help;
+}
+.not-allowed{
+    cursor: not-allowed;
+}

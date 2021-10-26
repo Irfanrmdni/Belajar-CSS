@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grid-template-column */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+        'footer footer footer';
+}
+
+.container .grid-item {
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.container .grid-item:nth-child(even) {
+    background-color: lightpink;
+}
+
+
+/* grid-template-areas */
+.container-dua {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'sidebar sidebar sidebar'
+        'content content content'
+        'footer footer footer';
+}
+
+.container-dua .grid-item {
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/* .container-dua .grid-item:nth-child(even){
+    background-color: lightpink;
+} */
+
+.container-dua .header {
+    grid-area: header;
+    background-color: rebeccapurple;
+}
+
+.container-dua .sidebar {
+    grid-area: sidebar;
+    background-color: orange;
+}
+
+.container-dua .content {
+    grid-area: content;
+    background-color: royalblue;
+}
+
+.container-dua .footer {
+    grid-area: footer;
+    background-color: grey;
+}
+
+/* responsive breakpoint */
+@media screen and (min-width: 576px) {
+    .container-dua {
+        grid-template-areas:
+            'header header header'
+            'sidebar content content'
+            'sidebar content content'
+            'footer footer footer';
+    }
+}
+
+/* shorthand grid-template */
+.container-tiga {
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    /* grid-template-rows:
+    [baris1-mulai] 50px 
+    [baris1-akhir baris2-mulai]
+    100px [baris2-akhir];
+
+    grid-template-columns: 1fr 2fr 3fr;
+
+    grid-template-areas: 
+        'header header header'        
+        'footer footer footer'; */
+
+    grid-template:
+        [baris1-mulai] 'header header header'50px [baris1-akhir baris2-mulai] 'footer footer footer'50px [baris2-akhir] / 1fr 2fr 3fr;
+}
+
+.container-tiga .grid-item {
+    background-color: lightblue;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tiga .grid-item:nth-child(even) {
+    background-color: lightpink;
+}
+
+
+/* grid-column-gap & grid-row-gap */
+.container-empat {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* sintaks lama */
+    /* grid-column-gap: 5px; */
+    /* grid-row-gap: 5px; */
+    /* grid-gap: 5px; */
+
+    /* sintaks baru */
+    /* column-gap: 5px; */
+    /* row-gap: 5px; */
+    gap: 5px;
+
+}
+
+.container-empat .grid-item {
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.container-empat .grid-item:nth-child(even) {
+    background-color: lightpink;
+}

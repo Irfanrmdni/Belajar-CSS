@@ -1,0 +1,8 @@
+// ?mengimport mixin . urutan nya harus sesuai
+
+// !untuk mixin jangan di masukan ke main.scss karna akan error
+// ?kita masukan ke file parsial yang membutuhkan mixin
+// @use 'modules/mixin';
+@use 'modules/header';
+@use 'modules/container';
+@use 'modules/footer';

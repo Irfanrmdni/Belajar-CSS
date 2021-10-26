@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* transisi menggunakan property , durasi dan fungsi */
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transition: transform .4s ease-in-out;
+}
+
+.kotak:hover {
+    transform: rotate(180deg);
+}
+
+/* transisi agar tidak patah-patah */
+.container {
+    width: 800px;
+    margin: 20px auto;
+    border: solid 1px black;
+}
+
+.kotak2 {
+    width: 100px;
+    height: 100px;
+    background-color: seagreen;
+    transition: .4s ease-in-out;
+}
+
+.container:hover .kotak2 {
+    transform: rotate(720deg);
+    margin-left: 700px;
+}
+
+/* menggunakan fungsi */
+.container2 {
+    width: 800px;
+    margin: 20px auto;
+    border: solid 1px black;
+}
+
+.kubus {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px 0;
+}
+
+.container2:hover .kubus {
+    transform: rotate(720deg);
+    margin-left: 700px;
+}
+
+.kubus1 {
+    transition: all .8s ease;
+}
+
+.kubus2 {
+    transition: all .8s ease-in;
+}
+
+.kubus3 {
+    transition: all .8s ease-out;
+}
+
+.kubus4 {
+    transition: all .8s ease-in-out;
+}
+
+.kubus5 {
+    transition: all .8s linear;
+}
+
+.kubus6 {
+    transition: all .8s cubic-bezier(0.93,-0.03, 0.3, 0.97);
+}
+
+/* transisi dengan delay */
+.container3 {
+    width: 800px;
+    margin: 20px auto;
+    border: solid 1px black;
+}
+
+.balok {
+    width: 100px;
+    height: 100px;
+    background-color: slategray;
+    color: blue;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px 0;
+    transition: background-color .8s ease-in-out, 
+    margin-left .8s 1s ease-in-out , transform .8s 1s ease-in-out;
+}
+/* value 1s adalah delay nya */
+
+.container3:hover .balok {
+    transform: rotate(720deg);
+    margin-left: 700px;
+    background-color: chartreuse;
+}
